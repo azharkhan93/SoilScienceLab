@@ -1,6 +1,6 @@
 export default {
     content: [
-        "./wwwroot/**/*.html",        // Static HTML files
+        "./wwwroot/**/*.html",        // c HTML files
         "./Pages/**/*.cshtml",        // Razor Pages
         "./Views/**/*.cshtml",        // MVC Views (if applicable)
         "./Components/**/*.razor",    // Razor Components

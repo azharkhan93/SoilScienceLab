@@ -16,7 +16,6 @@
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/scopedcss/bundle/CenterOfExcellence.styles.css
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/scopedcss/projectbundle/CenterOfExcellence.bundle.scp.css
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-khy4lop6wu.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/l233kwbouk-bqjiyaj88i.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/gef0sn7hkf-c2jlpeoesf.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/ovqya0sobg-erw9l3u2r3.gz
@@ -79,3 +78,7 @@
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/ref/CenterOfExcellence.dll
 /Users/azhar/Desktop/CenterOfExcellence/bin/Debug/net9.0/package-lock.json
 /Users/azhar/Desktop/CenterOfExcellence/bin/Debug/net9.0/package.json
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.sourcelink.json
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-5w5n70a409.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-q0gv1x3h2k.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz

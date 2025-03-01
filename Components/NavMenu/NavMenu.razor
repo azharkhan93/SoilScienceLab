@@ -1,22 +1,5 @@
 @inject IJSRuntime JS
 
-@code {
-    private bool _isNavOpen = false; // Tracks whether the mobile nav is open or closed
-
-    private async Task TestClick()
-    {
-        Console.WriteLine("Test button clicked!"); // Logs in server console
-        System.Diagnostics.Debug.WriteLine("Test button clicked!"); // Logs in Debug Output (not Chrome)
-        await JS.InvokeVoidAsync("console.log", "Test button clicked!"); // Logs in Chrome Console
-    }
-
-    private void ToggleNav()
-    {
-        _isNavOpen = !_isNavOpen; 
-        Console.WriteLine($"Menu toggled: {_isNavOpen}");
-        System.Diagnostics.Debug.WriteLine($"Menu toggled: {_isNavOpen}");
-    }
-}
 
 
 <nav class="flex justify-between items-center p-4 bg-teal-600 text-white">
@@ -70,4 +53,24 @@
         <button class="block w-full bg-blue-950 hover:bg-red-800 text-white px-4 py-2 rounded">Sign Up</button>
     </div>
 </div>
+
+
+@code {
+    private bool _isNavOpen = false; // Tracks whether the mobile nav is open or closed
+
+    private async Task TestClick()
+    {
+        Console.WriteLine("Test button clicked!"); // Logs in server console
+        System.Diagnostics.Debug.WriteLine("Test button clicked!"); // Logs in Debug Output (not Chrome)
+        await JS.InvokeVoidAsync("console.log", "Test button clicked!"); // Logs in Chrome Console
+    }
+
+    private void ToggleNav()
+    {
+        _isNavOpen = !_isNavOpen; 
+        Console.WriteLine($"Menu toggled: {_isNavOpen}");
+        System.Diagnostics.Debug.WriteLine($"Menu toggled: {_isNavOpen}");
+    }
+}
+
 

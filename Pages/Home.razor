@@ -16,6 +16,24 @@ class="h-[400px] bg-neutral-500 w-[500px]"
 
 </div>
 
+<h3>Counter</h3>
+
+<p>Current count: @count</p>
+
+<button @onclick="IncrementCount" class="bg-blue-500 text-white px-4 py-2 rounded">
+    Click me
+</button>
+
+@code {
+    private int count = 0;
+
+    private void IncrementCount()
+    {
+        count++;
+    }
+}
+
+
 </div>
 
 

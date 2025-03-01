@@ -1,0 +1,47 @@
+@inject IJSRuntime JS
+
+@code {
+    private bool isMenuOpen = false;
+
+    private async Task ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+        await JS.InvokeVoidAsync("console.log", $"Menu toggled: {isMenuOpen}"); 
+    }
+}
+
+<nav class="flex justify-between items-center p-4 bg-teal-600 text-white">
+    <div class="text-2xl font-bold">
+        <h2>MyLogo</h2>
+    </div>
+    
+    <!-- Hamburger Menu Icon -->
+    <div class="md:hidden">
+        <button @onclick="ToggleMenu" class="text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    
+    
+    <div class="@(isMenuOpen ? "flex" : "hidden") md:flex flex-col md:flex-row 
+        absolute top-0 left-0 w-full h-screen bg-black text-white 
+        md:relative md:h-auto md:w-auto md:bg-black md:top-auto md:left-auto 
+        justify-center items-center">
+        <a href="/">
+            <NavLink class="text-lg hover:underline p-4 md:p-0" Match=NavLinkMatch.All>Home</NavLink>
+        </a>
+        <a href="/about">
+            <NavLink class="text-lg hover:underline p-4 md:p-0">About</NavLink>
+        </a>
+        <a href="/contact">
+            <NavLink class="text-lg hover:underline p-4 md:p-0">Contact</NavLink>
+        </a>
+    </div>
+    
+    <!-- Sign Up Button -->
+    <div class="hidden md:block">
+        <button class="bg-blue-950 hover:bg-red-800 text-white px-4 py-2 rounded">Sign Up</button>
+    </div>
+</nav>

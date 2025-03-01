@@ -1,0 +1,21 @@
+
+<button @onclick="ToggleDrawer" class="text-white ">
+    <i class="fas fa-bars"></i>
+</button>
+
+@if (IsDrawerOpen)
+{
+    <div class="absolute top-0 left-0 h-full w-64 bg-gray-800 text-white p-5 ">
+        <button @onclick="ToggleDrawer" class="text-white mb-4">Close</button>
+        <DrawerLinks />
+    </div>
+}
+
+@code {
+    private bool IsDrawerOpen = false;
+
+    private void ToggleDrawer()
+    {
+        IsDrawerOpen = !IsDrawerOpen;
+    }
+}

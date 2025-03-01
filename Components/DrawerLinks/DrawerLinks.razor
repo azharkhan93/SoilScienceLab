@@ -1,0 +1,12 @@
+@inherits LayoutComponentBase
+
+<div class="@CssClass" style="border: 4px solid green;">
+    <NavLink href="/" class="nav-link text-white">Home</NavLink>
+    <NavLink href="/about" class="nav-link text-white">About</NavLink>
+    <NavLink href="/contact" class="nav-link text-white">Contact</NavLink>
+</div>
+
+@code {
+    [Parameter] public string CssClass { get; set; } = "flex flex-col lg:flex-row lg:gap-4";
+}
+

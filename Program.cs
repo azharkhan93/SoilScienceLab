@@ -14,9 +14,10 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseWebSockets();
+
 app.UseStaticFiles();  
 app.UseAntiforgery();
+app.UseWebSockets();  
 
 app.MapRazorComponents<CenterOfExcellence.App>()  
     .AddInteractiveServerRenderMode();

@@ -558,12 +558,49 @@ video {
   position: static;
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[400vh\] {
+  height: 400vh;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.w-\[100vw\] {
+  width: 100vw;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .px-3 {
@@ -571,9 +608,9 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .ps-3 {

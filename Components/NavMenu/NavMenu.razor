@@ -1,47 +1,58 @@
-@inject IJSRuntime JS
-
 @code {
-    private bool isMenuOpen = false;
+    private bool _isNavOpen = false; // Tracks whether the mobile nav is open or closed
 
-    private async Task ToggleMenu()
+    private void ToggleNav()
     {
-        isMenuOpen = !isMenuOpen;
-        await JS.InvokeVoidAsync("console.log", $"Menu toggled: {isMenuOpen}"); 
+        _isNavOpen = !_isNavOpen; 
+        Console.WriteLine($"Menu toggled: {_isNavOpen}");// Toggle the state
     }
 }
 
 <nav class="flex justify-between items-center p-4 bg-teal-600 text-white">
+    <!-- Logo -->
     <div class="text-2xl font-bold">
         <h2>MyLogo</h2>
     </div>
-    
-    <!-- Hamburger Menu Icon -->
-    <div class="md:hidden">
-        <button @onclick="ToggleMenu" class="text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+
+    <!-- Hamburger Icon (Visible only on smaller devices) -->
+    <div class="lg:hidden">
+        <button @onclick="ToggleNav" class="focus:outline-none">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
     </div>
-    
-    
-    <div class="@(isMenuOpen ? "flex" : "hidden") md:flex flex-col md:flex-row 
-        absolute top-0 left-0 w-full h-screen bg-black text-white 
-        md:relative md:h-auto md:w-auto md:bg-black md:top-auto md:left-auto 
-        justify-center items-center">
-        <a href="/">
-            <NavLink class="text-lg hover:underline p-4 md:p-0" Match=NavLinkMatch.All>Home</NavLink>
-        </a>
-        <a href="/about">
-            <NavLink class="text-lg hover:underline p-4 md:p-0">About</NavLink>
-        </a>
-        <a href="/contact">
-            <NavLink class="text-lg hover:underline p-4 md:p-0">Contact</NavLink>
-        </a>
+
+    <!-- Navigation Links (Visible on larger devices) -->
+    <div class="hidden lg:flex gap-6">
+        <NavLink href="/" class="text-lg hover:underline" Match="NavLinkMatch.All">Home</NavLink>
+        <NavLink href="/about" class="text-lg hover:underline">About</NavLink>
+        <NavLink href="/contact" class="text-lg hover:underline">Contact</NavLink>
     </div>
-    
-    <!-- Sign Up Button -->
-    <div class="hidden md:block">
+
+    <!-- Sign Up Button (Visible on larger devices) -->
+    <div class="hidden lg:block">
         <button class="bg-blue-950 hover:bg-red-800 text-white px-4 py-2 rounded">Sign Up</button>
     </div>
 </nav>
+
+<!-- Mobile Navigation Links (Hidden by default) -->
+<div class="lg:hidden relative">
+    <div class="@(_isNavOpen ? "block" : "hidden") absolute top-0 left-0 w-full bg-teal-600 z-10">
+        <!-- Close Icon -->
+        <div class="flex justify-end p-4">
+            <button @onclick="ToggleNav" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <NavLink href="/" class="block text-lg hover:underline p-4" Match="NavLinkMatch.All">Home</NavLink>
+        <NavLink href="/about" class="block text-lg hover:underline p-4">About</NavLink>
+        <NavLink href="/contact" class="block text-lg hover:underline p-4">Contact</NavLink>
+        <button class="block w-full bg-blue-950 hover:bg-red-800 text-white px-4 py-2 rounded">Sign Up</button>
+    </div>
+</div>
+

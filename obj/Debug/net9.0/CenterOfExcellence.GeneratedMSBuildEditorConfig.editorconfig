@@ -24,20 +24,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/azhar/Desktop/CenterOfExcellence/Components/Drawer/Drawer.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EcmF3ZXIvRHJhd2VyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/azhar/Desktop/CenterOfExcellence/Components/DrawerLinks/DrawerLinks.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EcmF3ZXJMaW5rcy9EcmF3ZXJMaW5rcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/azhar/Desktop/CenterOfExcellence/Components/DrawerToggle/DrawerToggle.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EcmF3ZXJUb2dnbGUvRHJhd2VyVG9nZ2xlLnJhem9y
+[/Users/azhar/Desktop/CenterOfExcellence/Components/DesktopNav/DesktopNav.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EZXNrdG9wTmF2L0Rlc2t0b3BOYXYucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/CenterOfExcellence/Components/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/MobileNav/MobileNav.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Nb2JpbGVOYXYvTW9iaWxlTmF2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/NavLinkItem/NavLinkItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9OYXZMaW5rSXRlbS9OYXZMaW5rSXRlbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/CenterOfExcellence/Components/NavMenu/NavMenu.razor]

@@ -1,0 +1,15 @@
+<NavLink href="@Href" class="text-lg hover:underline w-full p-2"
+         style="@BorderStyle" Match="@Match">
+    @Text
+</NavLink>
+
+@code {
+    [Parameter] public string? Href { get; set; }
+    [Parameter] public string? Text { get; set; }
+    [Parameter] public NavLinkMatch Match { get; set; } = NavLinkMatch.All;
+    [Parameter] public bool BorderTop { get; set; } = false;
+    [Parameter] public bool BorderBottom { get; set; } = false;
+
+    private string BorderStyle => $"{(BorderTop ? "border-t-2 border-black" : "")} {(BorderBottom ? "border-b-2 border-black" : "")}";
+}
+

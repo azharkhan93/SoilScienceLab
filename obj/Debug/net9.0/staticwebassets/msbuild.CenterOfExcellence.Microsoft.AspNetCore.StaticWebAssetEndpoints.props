@@ -13,16 +13,16 @@
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2927"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022a3uYwzoGRmqalzvA4JU6SWhH7v4QomNhxnTDJs90ypc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 19:20:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/CenterOfExcellence.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CenterOfExcellence.izcrmju8xk.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CenterOfExcellence.nsu2n5a1f8.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-flxo6fczAyZg\u002B2e0wIzsEIizeYS7k1LFJzk4usN31ZI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5778"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022flxo6fczAyZg\u002B2e0wIzsEIizeYS7k1LFJzk4usN31ZI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 11:17:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z5O4HVl\u002BBGl/CoRpTZakn0dU9BEjKoeptYZAqgs7kVg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5756"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z5O4HVl\u002BBGl/CoRpTZakn0dU9BEjKoeptYZAqgs7kVg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 13:15:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/CenterOfExcellence.izcrmju8xk.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CenterOfExcellence.izcrmju8xk.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/CenterOfExcellence.nsu2n5a1f8.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CenterOfExcellence.nsu2n5a1f8.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"izcrmju8xk"},{"Name":"integrity","Value":"sha256-flxo6fczAyZg\u002B2e0wIzsEIizeYS7k1LFJzk4usN31ZI="},{"Name":"label","Value":"_content/CenterOfExcellence/CenterOfExcellence.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5778"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022flxo6fczAyZg\u002B2e0wIzsEIizeYS7k1LFJzk4usN31ZI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 11:17:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nsu2n5a1f8"},{"Name":"integrity","Value":"sha256-Z5O4HVl\u002BBGl/CoRpTZakn0dU9BEjKoeptYZAqgs7kVg="},{"Name":"label","Value":"_content/CenterOfExcellence/CenterOfExcellence.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5756"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z5O4HVl\u002BBGl/CoRpTZakn0dU9BEjKoeptYZAqgs7kVg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 13:15:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/css/build.a4k54r4vif.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\build.css'))</AssetFile>

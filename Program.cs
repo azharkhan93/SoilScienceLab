@@ -1,14 +1,12 @@
-
-
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 var app = builder.Build();
 
-// Error handling
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
@@ -16,10 +14,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseWebSockets();
+app.UseStaticFiles();  
 app.UseAntiforgery();
 
-// **Fix: Ensure App.razor is recognized**
-app.MapRazorComponents<CenterOfExcellence.App>()  // Change to match the correct namespace
+app.MapRazorComponents<CenterOfExcellence.App>()  
     .AddInteractiveServerRenderMode();
 
 app.Run();

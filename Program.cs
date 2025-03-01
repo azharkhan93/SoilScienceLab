@@ -1,28 +1,25 @@
-using CenterOfExcellence.Components;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+// Add services
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 var app = builder.Build();
 
-
+// Error handling
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-
-
 app.UseAntiforgery();
 
-app.MapStaticAssets();
-app.MapRazorComponents<App>()
+// **Fix: Ensure App.razor is recognized**
+app.MapRazorComponents<CenterOfExcellence.App>()  // Change to match the correct namespace
     .AddInteractiveServerRenderMode();
 
 app.Run();

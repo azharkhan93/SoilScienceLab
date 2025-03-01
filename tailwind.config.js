@@ -1,3 +1,5 @@
+import theme from "./wwwroot/Theme.js";
+
 export default {
   content: [
       "./Pages/**/*.razor",
@@ -9,7 +11,13 @@ export default {
       "./Layout/**/*.razor",
   ],
   theme: {
-      extend: {},
+    extend: {
+      colors: theme.colors, 
+      fontSize: theme.fontSizes, 
+      fontFamily: theme.fontFamily,
+      fontWeight: theme.fontWeight,
+      lineHeight: theme.lineHeight,
+    },
   },
   plugins: [],
 };

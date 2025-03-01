@@ -9,19 +9,17 @@ html, body {
     
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
+/* @layer base {
+    h1 {
+      @apply text-heading font-heading font-bold leading-heading;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0);
+  
+    h2 {
+      @apply text-subHeading font-subHeading font-medium leading-subHeading;
     }
-}
-
-.animate-fade-in-left {
-    animation: fadeInLeft 0.5s ease-in-out;
-}
-
+  
+    p {
+      @apply text-paragraph font-paragraph font-normal leading-paragraph;
+    }
+  } */
 

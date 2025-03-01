@@ -32,4 +32,4 @@
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.sourcelink.json
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-5c9q56u0e0.gz
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-0p2tvn36y7.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-bsti9c5ppk.gz

@@ -1,12 +1,15 @@
 @inject IJSRuntime JS
 
 <nav class="flex justify-between items-center p-4 bg-teal-600 text-white relative">
-    <div class="text-2xl font-bold">
-        <h2>MyLogo</h2>
-    </div>
+    <div class=" flex flex-row items-center gap-10">
+        <div class="text-2xl font-bold">
+            <h2>MyLogo</h2>
+        </div>
 
-    <!-- Mobile Toggle Button -->
-    <div class="lg:hidden">
+
+        <DesktopNav />
+    </div>
+    <div class="md:hidden">
         <button @onclick="ToggleNav" class="focus:outline-none z-50">
             <svg class="w-12 h-12 transition-transform duration-300" fill="none" stroke="currentColor"
                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -15,15 +18,11 @@
         </button>
     </div>
 
-    <!-- Desktop Navigation -->
-    <DesktopNav />
-
-    <div class="hidden lg:block">
+    <div class="hidden md:block">
         <button class="bg-blue-950 hover:bg-red-800 text-white px-4 py-2 rounded">Sign Up</button>
     </div>
 </nav>
 
-<!-- Mobile Drawer -->
 <MobileNav IsOpen="_isNavOpen" OnToggle="ToggleNav" />
 
 @code {

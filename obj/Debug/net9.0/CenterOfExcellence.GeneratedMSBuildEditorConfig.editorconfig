@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/CenterOfExcellence/Components/Common/Buttons/CustomButton/CustomButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vQnV0dG9ucy9DdXN0b21CdXR0b24vQ3VzdG9tQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/CenterOfExcellence/Components/DesktopNav/DesktopNav.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EZXNrdG9wTmF2L0Rlc2t0b3BOYXYucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

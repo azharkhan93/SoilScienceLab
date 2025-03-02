@@ -31,6 +31,6 @@
 /Users/azhar/Desktop/CenterOfExcellence/bin/Debug/net9.0/package.json
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.sourcelink.json
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-5mozi8lls2.gz
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-zz56rdw0t1.gz
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-xszqnp9rsb.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-pr31fl7vnp.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-mmjd86hdfi.gz

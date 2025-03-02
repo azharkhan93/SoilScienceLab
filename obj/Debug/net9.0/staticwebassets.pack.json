@@ -21,16 +21,12 @@
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe.png",
-      "PackagePath": "staticwebassets/images/globe.png"
+      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
+      "PackagePath": "staticwebassets/images/bgvideo.mp4"
     },
     {
       "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe2.png",
       "PackagePath": "staticwebassets/images/globe2.png"
-    },
-    {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/plane.png",
-      "PackagePath": "staticwebassets/images/plane.png"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CenterOfExcellence.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

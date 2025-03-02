@@ -8,9 +8,9 @@ export default {
       customGreen: "#032600",
     },
     fontSizes: {
-      paragraph: "16px",
+      paragraph: "16px" ,
       subHeading: "20px",
-      heading: "25px",
+      heading: "35px",
     },
     fontFamily: {
         heading: ["Josefin Sans", "sans-serif"],  

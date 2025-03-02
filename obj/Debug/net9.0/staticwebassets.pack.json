@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/images/globe.png"
     },
     {
+      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe2.png",
+      "PackagePath": "staticwebassets/images/globe2.png"
+    },
+    {
       "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/plane.png",
       "PackagePath": "staticwebassets/images/plane.png"
     },

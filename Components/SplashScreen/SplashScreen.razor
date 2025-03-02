@@ -1,0 +1,49 @@
+@code {
+    private bool isLoading = true;
+    private double progress = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        int duration = 3000;
+        int interval = 50;
+        int steps = duration / interval;
+
+        for (int i = 0; i <= steps; i++)
+        {
+            progress = (i / (double)steps) * 100;
+            StateHasChanged();
+            await Task.Delay(interval);
+        }
+
+        isLoading = false;
+        StateHasChanged();
+    }
+}
+
+@if (isLoading)
+{
+    <div class="fixed inset-0 flex items-center justify-center bg-gray-100 w-full h-screen">
+    <div class="relative w-40 h-40 flex items-center justify-center">
+        <!-- Slowly Rotating Logo -->
+        <img src="images/globe2.png" alt="Globe" class="w-full h-full z-10 animate-spin" />
+
+        <svg class="absolute w-[120%] h-[120%]" viewBox="0 0 100 100">
+
+            <circle cx="50" cy="50" r="45" stroke="lightgray" stroke-width="4" fill="none" />
+
+            <circle cx="50" cy="50" r="45" stroke="#008080" stroke-width="4" fill="none" stroke-dasharray="282.6"
+                stroke-dashoffset="@((1 - (progress / 100)) * 282.6)" stroke-linecap="round"
+                transform="rotate(-90 50 50)" />
+        </svg>
+    </div>
+</div>
+
+}
+else
+{
+    @ChildContent
+}
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

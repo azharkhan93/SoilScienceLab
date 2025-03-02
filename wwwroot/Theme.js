@@ -8,14 +8,14 @@ export default {
       customGreen: "#032600",
     },
     fontSizes: {
-      paragraph: "18px",
-      subHeading: "28px",
-      heading: "36px",
+      paragraph: "16px",
+      subHeading: "20px",
+      heading: "25px",
     },
     fontFamily: {
-        heading: ["Poppins", "sans-serif"],  
-        subHeading: ["Roboto", "sans-serif"], 
-        paragraph: ["Lora", "serif"], 
+        heading: ["Josefin Sans", "sans-serif"],  
+        subHeading: ["Josefin Sans", "sans-serif"], 
+        paragraph: ["EB Garamond", "serif"], 
       },
       fontWeight: {
         paragraph: "400", 

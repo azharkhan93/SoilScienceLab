@@ -9,6 +9,24 @@ html, body {
     
 }
 
+.loader-circle {
+    width: 130%;
+    height: 130%;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Logo spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-spin {
+    animation: spin 5s linear infinite; /* Slower rotation (5s duration) */
+}
+
 /* @layer base {
     h1 {
       @apply text-heading font-heading font-bold leading-heading;

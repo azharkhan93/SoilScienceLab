@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js",
+      "PackagePath": "staticwebassets/Theme.js"
+    },
+    {
       "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
@@ -15,6 +19,14 @@
     {
       "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe.png",
+      "PackagePath": "staticwebassets/images/globe.png"
+    },
+    {
+      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/plane.png",
+      "PackagePath": "staticwebassets/images/plane.png"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CenterOfExcellence.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

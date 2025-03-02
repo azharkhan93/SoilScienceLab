@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb290ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/CenterOfExcellence/Components/HeroSection/HeroSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9IZXJvU2VjdGlvbi9IZXJvU2VjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/CenterOfExcellence/Components/MobileNav/MobileNav.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Nb2JpbGVOYXYvTW9iaWxlTmF2LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

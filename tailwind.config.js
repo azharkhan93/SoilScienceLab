@@ -1,6 +1,7 @@
 import theme from "./wwwroot/Theme.js";
 
 export default {
+  mode: 'jit',
   content: [
       "./Pages/**/*.razor",
       "./Components/**/*.razor",

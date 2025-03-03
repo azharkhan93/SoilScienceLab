@@ -204,6 +204,15 @@ abbr:where([title]) {
 Remove the default font size and weight for headings.
 */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
@@ -792,10 +801,10 @@ video {
   padding-right: 1rem;
 }
 
-/* .px-6 {
+.px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-} */
+}
 
 .py-2 {
   padding-top: 0.5rem;

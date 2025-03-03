@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "w2gdGqijH3I=",
+  "success": true,
+  "projectFilePath": "/Users/azhar/Desktop/CenterOfExcellence/CenterOfExcellence.csproj",
+  "expectedPackageFiles": [
+    "/Users/azhar/.nuget/packages/heroicons.blazor/1.0.6/heroicons.blazor.1.0.6.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.aspnetcore.authorization/3.1.13/microsoft.aspnetcore.authorization.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.aspnetcore.components/3.1.13/microsoft.aspnetcore.components.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.aspnetcore.components.analyzers/3.1.13/microsoft.aspnetcore.components.analyzers.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.aspnetcore.components.forms/3.1.13/microsoft.aspnetcore.components.forms.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.aspnetcore.components.web/3.1.13/microsoft.aspnetcore.components.web.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.aspnetcore.metadata/3.1.13/microsoft.aspnetcore.metadata.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.13/microsoft.extensions.dependencyinjection.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.13/microsoft.extensions.dependencyinjection.abstractions.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.13/microsoft.extensions.logging.abstractions.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.extensions.options/3.1.13/microsoft.extensions.options.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.extensions.primitives/3.1.13/microsoft.extensions.primitives.3.1.13.nupkg.sha512",
+    "/Users/azhar/.nuget/packages/microsoft.jsinterop/3.1.13/microsoft.jsinterop.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

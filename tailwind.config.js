@@ -3,13 +3,14 @@ import theme from "./wwwroot/Theme.js";
 export default {
   mode: 'jit',
   content: [
-      "./Pages/**/*.razor",
-      "./Components/**/*.razor",
-      "./Shared/**/*.razor",
-      "./wwwroot/**/*.html",
-      "./**/*.razor",
-      "./**/*.cshtml",
-      "./Layout/**/*.razor",
+    "./Pages/**/*.razor",
+    "./Components/**/*.razor",
+    "./Shared/**/*.razor",
+    "./Layout/**/*.razor",
+    "./Views/**/*.cshtml",
+    "./wwwroot/**/*.html",
+    "./**/*.razor",
+    "./**/*.cshtml",
   ],
   theme: {
     extend: {

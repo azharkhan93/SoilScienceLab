@@ -18,7 +18,6 @@
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/scopedcss/bundle/CenterOfExcellence.styles.css
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-pr31fl7vnp.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/staticwebassets.build.json
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/staticwebassets.development.json
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -36,4 +35,5 @@
 /Users/azhar/Desktop/CenterOfExcellence/bin/Debug/net9.0/HeroIcons.Blazor.dll
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.csproj.AssemblyReference.cache
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOf.732B134C.Up2Date
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-uhw8sv9v5i.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-lawcff5to6.gz

@@ -8,7 +8,7 @@ export default {
       customGreen: "#032600",
     },
     fontSizes: {
-      paragraph: "16px" ,
+      paragraph: "18px" ,
       subHeading: "20px",
       heading: "35px",
     },

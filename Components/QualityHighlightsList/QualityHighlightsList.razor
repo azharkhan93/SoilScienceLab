@@ -1,0 +1,15 @@
+@code {
+    List<QualityHighlight> Highlights = new()
+    {
+        new QualityHighlight { Number = "600+", Text = "Instruments used for real-time QC monitoring", Icon = "fa-microscope" },
+        new QualityHighlight { Number = "50+", Text = "Quality Checks & Processes on Every Sample", Icon = "fa-check-circle" },
+        new QualityHighlight { Number = "15+", Text = "Quality indicators monitored on a daily basis", Icon = "fa-chart-bar" }
+    };
+}
+
+<div class="flex gap-6 flex-col md:flex-row flex-wrap">
+    @foreach (var highlight in Highlights)
+    {
+        <QualityHighlightItem Number="@highlight.Number" Text="@highlight.Text" Icon="@highlight.Icon" />
+    }
+</div>

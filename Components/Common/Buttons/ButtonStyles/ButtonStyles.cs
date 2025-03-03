@@ -8,7 +8,7 @@ public static class ButtonStyles
             ButtonVariant.Primary => "py-2 px-10  bg-blue-950 hover:bg-red-800 hover:pl-8  rounded-md text-subHeading font-subHeading transition text-white",
 
 
-            ButtonVariant.Secondary => "px-6 py-3 bg-secondary hover:bg-accent text-heading rounded-lg text-subHeading font-subHeading transition",
+            ButtonVariant.Secondary => " px-10 bg-blue-950 hover:bg-red-800 font-paragraph rounded-lg  transition text-[18px] text-white",
 
             ButtonVariant.Disabled => "px-6 py-3 bg-gray-300 text-gray-500 rounded-lg text-paragraph font-paragraph transition cursor-not-allowed",
 

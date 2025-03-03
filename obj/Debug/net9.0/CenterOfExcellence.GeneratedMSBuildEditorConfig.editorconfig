@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/CenterOfExcellence/Components/Cards/Cards.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9DYXJkcy9DYXJkcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/CenterOfExcellence/Components/Common/Buttons/CustomButton/CustomButton.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vQnV0dG9ucy9DdXN0b21CdXR0b24vQ3VzdG9tQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,8 +56,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9OYXZNZW51L05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/CenterOfExcellence/Components/PopularTestSection/PopularTestSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qb3B1bGFyVGVzdFNlY3Rpb24vUG9wdWxhclRlc3RTZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/QualityHighlightItem/QualityHighlightItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9RdWFsaXR5SGlnaGxpZ2h0SXRlbS9RdWFsaXR5SGlnaGxpZ2h0SXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/QualityHighlightsList/QualityHighlightsList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9RdWFsaXR5SGlnaGxpZ2h0c0xpc3QvUXVhbGl0eUhpZ2hsaWdodHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/QualitySection/QualitySection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9RdWFsaXR5U2VjdGlvbi9RdWFsaXR5U2VjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/CenterOfExcellence/Components/SplashScreen/SplashScreen.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TcGxhc2hTY3JlZW4vU3BsYXNoU2NyZWVuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/TestCardsList/TestCardsList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UZXN0Q2FyZHNMaXN0L1Rlc3RDYXJkc0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/CenterOfExcellence/Layout/MainLayout.razor]

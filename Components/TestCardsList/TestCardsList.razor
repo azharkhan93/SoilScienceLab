@@ -1,0 +1,31 @@
+@code {
+    List<TestCardModel> OfferCards = new()
+    {
+        new TestCardModel 
+        {
+            Title = "Special Discount Offer",
+            Icon = "fa-gift",
+            Texts = new() { "Fast Service", "Secure Payment", "Best Quality" },
+            Row1Label = "Old Price: $100",
+            Row2Label = "New Price: $80",
+            DiscountPercentage = "20"
+        },
+        new TestCardModel
+        {
+            Title = "Premium Plan",
+            Icon = "fa-star",
+            Texts = new() { "Exclusive Features", "Priority Support", "No Ads" },
+            Row1Label = "Old Price: $200",
+            Row2Label = "New Price: $150",
+            DiscountPercentage = "25"
+        }
+    };
+}
+
+<div class="flex gap-6 flex-col md:flex-row flex-wrap">
+    @foreach (var card in OfferCards)
+    {
+         <p>@card.Title</p>  @* Debugging line *@
+    <Cards Card="@card" />
+    }
+</div>

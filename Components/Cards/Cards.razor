@@ -1,0 +1,36 @@
+@code {
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Icon { get; set; } = string.Empty;
+    [Parameter] public List<string> Texts { get; set; } = new();
+    [Parameter] public string Row1Label { get; set; } = string.Empty;
+    [Parameter] public string Row1Value { get; set; } = string.Empty;
+    [Parameter] public string Row2Label { get; set; } = string.Empty;
+    [Parameter] public string DiscountPercentage { get; set; } = string.Empty;
+}
+
+<div class="rounded-lg flex flex-col gap-4 w-full md:w-[400px] items-start border-t-2 border-blue-950 border-b-2 py-6 px-2 shadow-lg shadow-slate-950/20">
+    <h2 class="font-subHeading text-[20px] leading-subHeading border-b-2 border-blue-950 p-3">@Title</h2>
+    
+    @foreach (var text in Texts)
+    {
+        <div class="flex items-center justify-center gap-3 text-gray-700">
+            <i class="fa-solid @Icon text-xl text-blue-950 cursor-pointer transition-all hover:text-blue-600"></i>
+            <span class="font-paragraph text-[18px] leading-subHeading">@text</span>
+        </div>
+    }
+    
+    <div class="flex justify-between p-2 rounded items-center flex-row w-full">
+        <div class="flex items-center flex-row gap-3">
+            <h2 class="font-subHeading font-[20px] line-through">@Row1Label</h2>
+            <span class="font-subHeading text-[20px] leading-subHeading">@Row2Label</span>
+        </div>
+        <div>
+            <h1 class="font-subHeading text-[20px]">@DiscountPercentage%/<span class="text-3xl text-blue-950"> Off</span></h1>
+        </div>
+    </div>
+    
+    <div class="flex items-center justify-between flex-row w-full">
+        <CustomButton Text="Book Now" Variant="ButtonVariant.Secondary" Icon="fa-info-circle" />
+        <h1 class="font-subHeading text-[20px]">Know More</h1>
+    </div>
+</div>

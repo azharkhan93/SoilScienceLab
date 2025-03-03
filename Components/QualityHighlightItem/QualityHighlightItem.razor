@@ -1,0 +1,15 @@
+@code {
+    [Parameter] public string Number { get; set; } = string.Empty;
+    [Parameter] public string Text { get; set; } = string.Empty;
+    [Parameter] public string Icon { get; set; } = string.Empty;
+}
+
+<div class=" p-4 rounded-lg text-center shadow-black/40 shadow-lg flex items-center flex-col md:flex-row">
+    <div>
+    <i class="fa-solid @Icon text-4xl text-blue-950 cursor-pointer transition-all hover:text-blue-600"></i>
+    </div>
+    <div class="flex items-center flex-col gap-4 max-w-[300px]">
+    <h3 class="font-heading  text-[35px] ">@Number</h3>
+    <p class="font-paragraph text-[18px] leading-paragraph">@Text</p>
+    </div>
+</div>

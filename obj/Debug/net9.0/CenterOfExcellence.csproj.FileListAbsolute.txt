@@ -35,5 +35,5 @@
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/ref/CenterOfExcellence.dll
 /Users/azhar/Desktop/CenterOfExcellence/bin/Debug/net9.0/HeroIcons.Blazor.dll
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.csproj.AssemblyReference.cache
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-5kiutq78pm.gz
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOf.732B134C.Up2Date
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-uhw8sv9v5i.gz

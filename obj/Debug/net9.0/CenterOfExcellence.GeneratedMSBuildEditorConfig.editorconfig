@@ -36,8 +36,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EZXNrdG9wTmF2L0Rlc2t0b3BOYXYucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/azhar/Desktop/CenterOfExcellence/Components/Footer.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb290ZXIucmF6b3I=
+[/Users/azhar/Desktop/CenterOfExcellence/Components/Footer/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/CenterOfExcellence/Components/HeroSection/HeroSection.razor]
@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/azhar/Desktop/CenterOfExcellence/Components/TestCardsList/TestCardsList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UZXN0Q2FyZHNMaXN0L1Rlc3RDYXJkc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/CenterOfExcellence/Components/TopBar/TopBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Ub3BCYXIvVG9wQmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/CenterOfExcellence/Layout/MainLayout.razor]

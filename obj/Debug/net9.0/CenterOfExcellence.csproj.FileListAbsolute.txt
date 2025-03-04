@@ -36,4 +36,4 @@
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.csproj.AssemblyReference.cache
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/CenterOf.732B134C.Up2Date
 /Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz
-/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-lawcff5to6.gz
+/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-k1b1fdqfa8.gz

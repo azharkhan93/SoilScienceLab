@@ -2,9 +2,9 @@
 
 <nav class="flex justify-between items-center p-4 bg-[#5A5A5A] text-white relative  h-[40px] py-6">
     <div class="flex flex-row items-center gap-10">
-        @* <div class="text-2xl font-bold">
-            <h2>MyLogo</h2>
-        </div> *@
+        <div class="text-2xl font-bold block md:hidden">
+            <h2 class="font-subHeading text-[20px]">MyLogo</h2>
+        </div>
         <DesktopNav />
     </div>
 
@@ -14,7 +14,7 @@
         <i class="fa-solid fa-bag-shopping text-2xl cursor-pointer hover:text-red-800 transition-all"></i>
         <i class="fa-solid fa-user-circle text-2xl cursor-pointer hover:text-red-800 transition-all"></i>
 
-       <button @onclick="ToggleNav" class="focus:outline-none z-50">
+       <button @onclick="ToggleNav" class="focus:outline-none ">
     <i class="fa-solid fa-bars-staggered text-4xl cursor-pointer hover:text-red-800 transition-all"></i>
 </button>
     </div>

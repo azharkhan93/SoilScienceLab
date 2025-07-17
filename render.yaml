@@ -7,4 +7,5 @@ services:
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
-
+      - key: DISABLE_HTTPS_REDIRECT
+        value: "true"

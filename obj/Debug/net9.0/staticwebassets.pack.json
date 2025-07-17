@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js",
       "PackagePath": "staticwebassets/Theme.js"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/build.css",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "PackagePath": "staticwebassets/css/build.css"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/tailwind.css",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/tailwind.css",
       "PackagePath": "staticwebassets/css/tailwind.css"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/favicon.png",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
       "PackagePath": "staticwebassets/images/bgvideo.mp4"
     },
     {
-      "Id": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe2.png",
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/globe2.png",
       "PackagePath": "staticwebassets/images/globe2.png"
     },
     {

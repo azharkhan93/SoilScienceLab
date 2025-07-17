@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w2gdGqijH3I=",
+  "dgSpecHash": "/k74ScV9w+I=",
   "success": true,
-  "projectFilePath": "/Users/azhar/Desktop/CenterOfExcellence/CenterOfExcellence.csproj",
+  "projectFilePath": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/CenterOfExcellence.csproj",
   "expectedPackageFiles": [
     "/Users/azhar/.nuget/packages/heroicons.blazor/1.0.6/heroicons.blazor.1.0.6.nupkg.sha512",
     "/Users/azhar/.nuget/packages/microsoft.aspnetcore.authorization/3.1.13/microsoft.aspnetcore.authorization.3.1.13.nupkg.sha512",

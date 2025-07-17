@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KDimPT8do841vVg66A6Hy4R59Js5DvgpiMu56XTeqw4=",
+  "Hash": "eyNktZzKkhXGOCdHLu9NxtWY/GawfUbAPzWGlQLFzyo=",
   "Source": "CenterOfExcellence",
   "BasePath": "_content/CenterOfExcellence",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CenterOfExcellence/wwwroot",
       "Source": "CenterOfExcellence",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "Theme#[.{fingerprint=8ye1w644wp}]?.js.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js",
+      "RelatedAsset": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "9afn5jqnqp",
       "Integrity": "36HXS0Vc9PWrosyZc3W4sm+sdeeI2Fr9yJj9VoVvoFY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js"
+      "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "css/build#[.{fingerprint=4dmbh20keu}]?.css.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/build.css",
+      "RelatedAsset": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "dm64pf927z",
       "Integrity": "hV+qJCSEQ8wQ6VQ6CZcmTFBMNXZYsRmG34YLuUcldSw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/build.css"
+      "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "css/tailwind#[.{fingerprint=cfs0wbahkk}]?.css.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/tailwind.css",
+      "RelatedAsset": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/tailwind.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "d1wqbhfaoe",
       "Integrity": "sWPycZx7sGtN3TmP/cSN7YgzEcZWB2A6a4RftwfMUhI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/tailwind.css"
+      "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/tailwind.css"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "app#[.{fingerprint=pgkf7mdfm4}]?.css.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css",
+      "RelatedAsset": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "72it1qt3i5",
       "Integrity": "USZ3pbLNFJKM9VHsJPrr/z4jyu1EYeYRqDQ7q0+aPYQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css"
+      "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/app.css"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/app.css",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/build.css",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "css/build#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot/css/build.css"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/tailwind.css",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/tailwind.css",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "css/tailwind#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot/css/tailwind.css"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/favicon.png",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/favicon.png",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot/favicon.png"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "images/bgvideo#[.{fingerprint}]?.mp4",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot/images/bgvideo.mp4"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe2.png",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/globe2.png",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "images/globe2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot/images/globe2.png"
     },
     {
-      "Identity": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
       "BasePath": "_content/CenterOfExcellence",
       "RelativePath": "Theme#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -251,7 +251,7 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -306,7 +306,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -343,7 +343,7 @@
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -388,7 +388,7 @@
     },
     {
       "Route": "app.pgkf7mdfm4.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -451,7 +451,7 @@
     },
     {
       "Route": "app.pgkf7mdfm4.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/app.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -496,7 +496,7 @@
     },
     {
       "Route": "app.pgkf7mdfm4.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-pgkf7mdfm4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -549,7 +549,7 @@
     },
     {
       "Route": "css/build.4dmbh20keu.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -612,7 +612,7 @@
     },
     {
       "Route": "css/build.4dmbh20keu.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/build.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -657,7 +657,7 @@
     },
     {
       "Route": "css/build.4dmbh20keu.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -710,7 +710,7 @@
     },
     {
       "Route": "css/build.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -765,7 +765,7 @@
     },
     {
       "Route": "css/build.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/build.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -802,7 +802,7 @@
     },
     {
       "Route": "css/build.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-4dmbh20keu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -847,7 +847,7 @@
     },
     {
       "Route": "css/tailwind.cfs0wbahkk.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -910,7 +910,7 @@
     },
     {
       "Route": "css/tailwind.cfs0wbahkk.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/tailwind.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/tailwind.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -955,7 +955,7 @@
     },
     {
       "Route": "css/tailwind.cfs0wbahkk.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1008,7 +1008,7 @@
     },
     {
       "Route": "css/tailwind.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1063,7 +1063,7 @@
     },
     {
       "Route": "css/tailwind.css",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/css/tailwind.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/tailwind.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1100,7 +1100,7 @@
     },
     {
       "Route": "css/tailwind.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/o0eiz2svup-cfs0wbahkk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1145,7 +1145,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/favicon.png",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1190,7 +1190,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/favicon.png",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1227,7 +1227,7 @@
     },
     {
       "Route": "images/bgvideo.mp4",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1264,7 +1264,7 @@
     },
     {
       "Route": "images/bgvideo.p9vqffrats.mp4",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/bgvideo.mp4",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1309,7 +1309,7 @@
     },
     {
       "Route": "images/globe2.jov22cnayp.png",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe2.png",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/globe2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1354,7 +1354,7 @@
     },
     {
       "Route": "images/globe2.png",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/images/globe2.png",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/globe2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1391,7 +1391,7 @@
     },
     {
       "Route": "Theme.8ye1w644wp.js",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1454,7 +1454,7 @@
     },
     {
       "Route": "Theme.8ye1w644wp.js",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1499,7 +1499,7 @@
     },
     {
       "Route": "Theme.8ye1w644wp.js.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1552,7 +1552,7 @@
     },
     {
       "Route": "Theme.js",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1607,7 +1607,7 @@
     },
     {
       "Route": "Theme.js",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/wwwroot/Theme.js",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1644,7 +1644,7 @@
     },
     {
       "Route": "Theme.js.gz",
-      "AssetFile": "/Users/azhar/Desktop/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

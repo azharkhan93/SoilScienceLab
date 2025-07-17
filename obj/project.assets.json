@@ -415,11 +415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/azhar/Desktop/CenterOfExcellence/CenterOfExcellence.csproj",
+      "projectUniqueName": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/CenterOfExcellence.csproj",
       "projectName": "CenterOfExcellence",
-      "projectPath": "/Users/azhar/Desktop/CenterOfExcellence/CenterOfExcellence.csproj",
+      "projectPath": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/CenterOfExcellence.csproj",
       "packagesPath": "/Users/azhar/.nuget/packages/",
-      "outputPath": "/Users/azhar/Desktop/CenterOfExcellence/obj/",
+      "outputPath": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/azhar/.nuget/NuGet/NuGet.Config"

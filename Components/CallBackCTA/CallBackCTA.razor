@@ -1,0 +1,62 @@
+
+
+<section class=" py-8 px-6 mx-4 my-8 rounded-2xl shadow-lg max-w-7xl">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <!-- Left Side - Healthcare Professionals Illustration -->
+           
+            <!-- Middle - Text Content -->
+            <div class="max-w-[45%] text-center md:text-left">
+                <h2 class="font-heading text-[20px] md:text-[24px] leading-heading text-gray-800 mb-2">
+                    Get a call back within 15 minutes from our Health Advisor for Test Booking Assistance
+                </h2>
+                <h2 class="font-paragraph leading-heading text-gray-800 mb-2">
+                    Get a call back within 15 minutes from our Health Advisor for Test Booking Assistance
+                </h2>
+            </div>
+
+            <!-- Right Side - Phone Input and Button -->
+            <div class="md:w-[50%] w-full">
+                <div class="relative w-full">
+                    <!-- Phone Input with Button Inside -->
+                    <div class="relative w-full">
+                        <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+                            <i class="fa-solid fa-phone text-gray-400"></i>
+                        </div>
+                        <input type="tel" 
+                               placeholder="Enter Your 10 Digit Mobile Number"
+                               @bind="phoneNumber"
+                               class="w-full pl-12 pr-40 py-4 rounded-full border-none outline-none text-gray-700 bg-white shadow-md font-paragraph text-[16px] md:text-[18px]"
+                               maxlength="10" />
+                        
+                        <!-- Callback Button Positioned Inside Input -->
+                        <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                            <CustomButton Text="Get a Callback" 
+                                          Variant="ButtonVariant.Primary" 
+                                          Icon="fa-phone" 
+                                          OnClick="@HandleCallbackRequest" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    private string phoneNumber = "";
+
+    private void HandleCallbackRequest()
+    {
+        if (string.IsNullOrWhiteSpace(phoneNumber) || phoneNumber.Length != 10)
+        {
+            // Handle validation - could show error message
+            Console.WriteLine("Please enter a valid 10-digit phone number");
+            return;
+        }
+        
+        // Handle callback request
+        Console.WriteLine($"Callback requested for: {phoneNumber}");
+        // Here you would typically make an API call to request the callback
+    }
+} 

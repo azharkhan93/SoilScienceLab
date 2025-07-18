@@ -1,0 +1,99 @@
+@using CenterOfExcellence.Components.Forms.InputField
+@using CenterOfExcellence.Components.Common.Buttons
+
+<div class="p-6">
+    <!-- Header -->
+    <div class="text-center mb-6">
+        <h2 class="font-heading text-[24px] leading-heading text-gray-800 mb-2">Welcome Back</h2>
+        <p class="font-paragraph text-[16px] leading-paragraph text-gray-600">Sign in to your account</p>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="flex justify-center mb-6">
+        <div class="w-[100%] h-32 rounded-sm overflow-hidden ">
+            <img src="/images/gin2.png"
+                 alt="Profile"
+                 class="w-full h-full object-cover" />
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <form @onsubmit="HandleSignIn" class="space-y-4">
+        <!-- Mobile Number Input -->
+        <InputField 
+            Placeholder="Mobile Number"
+            Value="@mobileNumber"
+            ValueChanged="@(value => mobileNumber = value)"
+            Type="tel"
+            CountryCode="+91"
+            MaxLength="10" />
+
+        <!-- Password Input -->
+        <InputField 
+            Placeholder="Password"
+            Value="@password"
+            ValueChanged="@(value => password = value)"
+            Type="password"
+            ShowPasswordToggle="true" />
+
+        <!-- Buttons -->
+        <div class="space-y-3 flex justify-center flex-col">
+            <div class="w-full flex justify-center">
+                <CustomButton Text="LOGIN" 
+                              Variant="ButtonVariant.Primary" 
+                              Icon="fa-sign-in-alt" 
+                              OnClick="@HandleSignIn" />
+            </div>
+            
+            <div class="text-center">
+                <span class="text-gray-500 font-paragraph text-[18px]">or</span>
+            </div>
+            
+            <div class="w-full flex justify-center">
+                <CustomButton Text="LOGIN / SIGN UP WITH OTP" 
+                              Variant="ButtonVariant.Primary" 
+                              Icon="fa-mobile-alt" 
+                              OnClick="@HandleOTPLogin" />
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="space-y-2 text-center">
+            <a href="#" class="text-blue-600 hover:text-blue-800 font-paragraph text-[14px] block">
+                Create/Forgot Password?
+            </a>
+            <p class="font-paragraph text-[14px] text-gray-600">
+                New User? <a href="#" class="text-blue-600 hover:text-blue-800">Create an account.</a>
+            </p>
+            <p class="font-paragraph text-[12px] text-gray-500">
+                By logging in, I agree to Xyz Organization 
+                <a href="#" class="text-blue-600 hover:text-blue-800">Terms of use</a> and 
+                <a href="#" class="text-blue-600 hover:text-blue-800">Privacy Policy</a>
+            </p>
+        </div>
+    </form>
+</div>
+
+@code {
+    private string mobileNumber = string.Empty;
+    private string password = string.Empty;
+
+    [Parameter] public EventCallback<(string mobile, string password)> OnSignIn { get; set; }
+    [Parameter] public EventCallback<string> OnOTPLogin { get; set; }
+
+    private async Task HandleSignIn()
+    {
+        if (!string.IsNullOrEmpty(mobileNumber) && !string.IsNullOrEmpty(password))
+        {
+            await OnSignIn.InvokeAsync((mobileNumber, password));
+        }
+    }
+
+    private async Task HandleOTPLogin()
+    {
+        if (!string.IsNullOrEmpty(mobileNumber))
+        {
+            await OnOTPLogin.InvokeAsync(mobileNumber);
+        }
+    }
+} 

@@ -1,0 +1,29 @@
+@namespace CenterOfExcellence.Components.TestimonialItem
+
+@code {
+    [Parameter] public TestimonialData Testimonial { get; set; } = new();
+}
+
+<div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-red-500">
+    <div class="flex items-start gap-4 mb-4">
+        <img src="@Testimonial.ImageUrl" 
+             alt="@Testimonial.AltText" 
+             class="w-12 h-12 rounded-full object-cover" />
+        <div>
+            <h3 class="font-heading text-[20px] leading-heading text-black">@Testimonial.Name</h3>
+            <p class="font-paragraph text-[16px] text-gray-600">@Testimonial.Location</p>
+        </div>
+    </div>
+    
+    <!-- Star Rating -->
+    <div class="flex gap-1 mb-4">
+        @for (int i = 0; i < Testimonial.StarRating; i++)
+        {
+            <i class="fa-solid fa-star text-black"></i>
+        }
+    </div>
+    
+    <p class="font-paragraph text-[16px] leading-paragraph text-gray-700">
+        "@Testimonial.TestimonialText"
+    </p>
+</div> 

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/images/bgvideo.mp4"
     },
     {
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/gin2.png",
+      "PackagePath": "staticwebassets/images/gin2.png"
+    },
+    {
       "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/images/globe2.png",
       "PackagePath": "staticwebassets/images/globe2.png"
     },

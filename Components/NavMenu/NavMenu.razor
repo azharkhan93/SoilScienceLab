@@ -1,4 +1,10 @@
 @inject IJSRuntime JS
+@using CenterOfExcellence.Components.SignInModal
+
+<SignInModal IsVisible="@isSignInModalVisible" 
+             IsVisibleChanged="OnModalVisibilityChanged"
+             OnSignIn="HandleSignIn"
+             OnOTPLogin="HandleOTPLogin" />
 
 <nav class="flex justify-between items-center p-4 bg-[#5A5A5A] text-white relative  h-[40px] py-6">
     <div class="flex flex-row items-center gap-10">
@@ -23,7 +29,8 @@
     <div class="hidden md:flex space-x-6">
         <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer hover:text-red-800 transition-all"></i>
         <i class="fa-solid fa-bag-shopping text-xl cursor-pointer hover:text-red-800 transition-all"></i>
-        <i class="fa-solid fa-user-circle text-xl cursor-pointer hover:text-red-800 transition-all"></i>
+         <i class="fa-solid fa-user-circle text-2xl cursor-pointer hover:text-red-800 transition-all"
+           @onclick="OpenSignInModal"></i>
     </div>
 </nav>
 
@@ -31,10 +38,44 @@
 
 @code {
     private bool _isNavOpen = false;
+    private bool isSignInModalVisible = false;
 
     private void ToggleNav()
     {
         _isNavOpen = !_isNavOpen;
         Console.WriteLine($"Menu toggled: {_isNavOpen}");
+    }
+
+    private void OpenSignInModal()
+    {
+        isSignInModalVisible = true;
+        StateHasChanged();
+        Console.WriteLine("Sign-in modal opened");
+    }
+
+    private void OnModalVisibilityChanged(bool isVisible)
+    {
+        isSignInModalVisible = isVisible;
+        StateHasChanged();
+    }
+
+    private void HandleSignIn((string mobile, string password) credentials)
+    {
+        // Handle sign in logic here
+        Console.WriteLine($"Sign in with mobile: {credentials.mobile}, password: {credentials.password}");
+        
+        // Close modal after successful sign in
+        isSignInModalVisible = false;
+        StateHasChanged();
+    }
+
+    private void HandleOTPLogin(string mobileNumber)
+    {
+        // Handle OTP login logic here
+        Console.WriteLine($"OTP login with mobile: {mobileNumber}");
+        
+        // Close modal after successful OTP login
+        isSignInModalVisible = false;
+        StateHasChanged();
     }
 }

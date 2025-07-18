@@ -1,0 +1,259 @@
+@using CenterOfExcellence.Components.Common.Buttons
+
+<section class="py-16 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+            <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-4">Meet Our Expert Team</h2>
+            <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 max-w-3xl mx-auto">
+                Our team of experienced healthcare professionals, researchers, and specialists are dedicated to providing you with the highest quality diagnostic services and personalized care.
+            </p>
+        </div>
+
+        <!-- Team Categories -->
+        <div class="space-y-16">
+            <!-- Leadership Team -->
+            <div>
+                <h3 class="font-heading text-[28px] leading-heading text-gray-800 mb-8 text-center">Leadership Team</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    @foreach (var member in leadershipTeam)
+                    {
+                        <div class="bg-white rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-all duration-300 border border-gray-100">
+                            <!-- Profile Image -->
+                            <div class="flex justify-center mb-6">
+                                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
+                                    <i class="@member.Icon text-5xl text-white"></i>
+                                </div>
+                            </div>
+
+                            <!-- Member Info -->
+                            <div class="text-center">
+                                <h4 class="font-heading text-[22px] leading-heading text-gray-800 mb-2">@member.Name</h4>
+                                <p class="font-subHeading text-[16px] leading-subHeading text-blue-600 mb-3">@member.Position</p>
+                                <p class="font-paragraph text-[14px] leading-paragraph text-gray-600 mb-4">@member.Description</p>
+
+                                <!-- Credentials -->
+                                <div class="space-y-2 mb-4">
+                                    @foreach (var credential in member.Credentials)
+                                    {
+                                        <div class="flex items-center justify-center">
+                                            <i class="fa-solid fa-award text-blue-500 mr-2"></i>
+                                            <span class="font-paragraph text-[12px] text-gray-600">@credential</span>
+                                        </div>
+                                    }
+                                </div>
+
+                                <!-- Social Links -->
+                                <div class="flex justify-center space-x-3">
+                                    @if (!string.IsNullOrEmpty(member.LinkedIn))
+                                    {
+                                        <a href="@member.LinkedIn" class="text-blue-600 hover:text-blue-800 transition-colors">
+                                            <i class="fa-brands fa-linkedin text-xl"></i>
+                                        </a>
+                                    }
+                                    @if (!string.IsNullOrEmpty(member.Email))
+                                    {
+                                        <a href="mailto:@member.Email" class="text-gray-600 hover:text-gray-800 transition-colors">
+                                            <i class="fa-solid fa-envelope text-xl"></i>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        
+            <!-- Research & Innovation Team -->
+            <div>
+                <h3 class="font-heading text-[28px] leading-heading text-gray-800 mb-8 text-center">Research & Innovation</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    @foreach (var researcher in researchTeam)
+                    {
+                        <div class="bg-white rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-all duration-300 border border-gray-100">
+                            <div class="flex items-start space-x-4">
+                                <!-- Researcher Icon -->
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center flex-shrink-0">
+                                    <i class="@researcher.Icon text-2xl text-white"></i>
+                                </div>
+
+                                <!-- Researcher Info -->
+                                <div class="flex-1">
+                                    <h4 class="font-heading text-[20px] leading-heading text-gray-800 mb-2">@researcher.Name</h4>
+                                    <p class="font-subHeading text-[16px] leading-subHeading text-purple-600 mb-3">@researcher.Role</p>
+                                    <p class="font-paragraph text-[14px] leading-paragraph text-gray-600 mb-3">@researcher.Description</p>
+                                    
+                                    <!-- Research Areas -->
+                                    <div class="flex flex-wrap gap-2">
+                                        @foreach (var area in researcher.ResearchAreas)
+                                        {
+                                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-paragraph">@area</span>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-16">
+            <CustomButton Text="Join Our Team" 
+                          Variant="ButtonVariant.Primary" 
+                          Icon="fa-users" 
+                          OnClick="@HandleJoinTeam" />
+        </div>
+    </div>
+</section>
+
+@code {
+    private List<TeamMember> leadershipTeam = new()
+    {
+        new TeamMember
+        {
+            Name = "Dr. Arvind Lal",
+            Position = "Founder & Chairman",
+            Description = "Pioneering healthcare diagnostics with over 30 years of experience in pathology and laboratory medicine.",
+            Icon = "fa-user-tie",
+            Credentials = new List<string> { "MBBS, MD Pathology", "30+ Years Experience", "Fellow of Indian Academy of Cytologists" },
+            LinkedIn = "https://linkedin.com/in/dr-arvind-lal",
+            Email = "arvind.lal@drlalpathlabs.com"
+        },
+        new TeamMember
+        {
+            Name = "Dr. Priya Sharma",
+            Position = "Chief Medical Officer",
+            Description = "Leading medical operations with expertise in clinical pathology and quality assurance.",
+            Icon = "fa-user-md",
+            Credentials = new List<string> { "MBBS, MD Pathology", "25+ Years Experience", "Quality Management Expert" },
+            LinkedIn = "https://linkedin.com/in/dr-priya-sharma",
+            Email = "priya.sharma@drlalpathlabs.com"
+        },
+        new TeamMember
+        {
+            Name = "Rajesh Kumar",
+            Position = "Chief Technology Officer",
+            Description = "Driving digital transformation and innovation in healthcare technology and automation.",
+            Icon = "fa-laptop-code",
+            Credentials = new List<string> { "B.Tech, M.Tech", "20+ Years Experience", "Healthcare Technology Expert" },
+            LinkedIn = "https://linkedin.com/in/rajesh-kumar",
+            Email = "rajesh.kumar@drlalpathlabs.com"
+        }
+    };
+
+    private List<MedicalSpecialist> medicalSpecialists = new()
+    {
+        new MedicalSpecialist
+        {
+            Name = "Dr. Amit Patel",
+            Specialization = "Clinical Biochemistry",
+            Experience = "15+ Years",
+            Icon = "fa-flask"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Meera Singh",
+            Specialization = "Hematology",
+            Experience = "12+ Years",
+            Icon = "fa-tint"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Sanjay Verma",
+            Specialization = "Microbiology",
+            Experience = "18+ Years",
+            Icon = "fa-bacteria"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Kavita Reddy",
+            Specialization = "Molecular Biology",
+            Experience = "10+ Years",
+            Icon = "fa-dna"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Rahul Gupta",
+            Specialization = "Immunology",
+            Experience = "14+ Years",
+            Icon = "fa-shield-alt"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Anjali Desai",
+            Specialization = "Cytology",
+            Experience = "16+ Years",
+            Icon = "fa-microscope"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Vikram Malhotra",
+            Specialization = "Histopathology",
+            Experience = "20+ Years",
+            Icon = "fa-tissue"
+        },
+        new MedicalSpecialist
+        {
+            Name = "Dr. Neha Kapoor",
+            Specialization = "Radiology",
+            Experience = "13+ Years",
+            Icon = "fa-x-ray"
+        }
+    };
+
+    private List<Researcher> researchTeam = new()
+    {
+        new Researcher
+        {
+            Name = "Dr. Suresh Menon",
+            Role = "Head of Research & Development",
+            Description = "Leading breakthrough research in diagnostic technologies and personalized medicine.",
+            Icon = "fa-microscope",
+            ResearchAreas = new List<string> { "AI Diagnostics", "Genomics", "Precision Medicine" }
+        },
+        new Researcher
+        {
+            Name = "Dr. Ananya Iyer",
+            Role = "Senior Research Scientist",
+            Description = "Specializing in molecular diagnostics and biomarker discovery for early disease detection.",
+            Icon = "fa-dna",
+            ResearchAreas = new List<string> { "Molecular Biology", "Biomarkers", "Early Detection" }
+        }
+    };
+
+    private void HandleJoinTeam()
+    {
+        Console.WriteLine("Join team clicked!");
+        // Navigate to careers page or open job listings
+    }
+
+    public class TeamMember
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Position { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+        public List<string> Credentials { get; set; } = new();
+        public string? LinkedIn { get; set; }
+        public string? Email { get; set; }
+    }
+
+    public class MedicalSpecialist
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Specialization { get; set; } = string.Empty;
+        public string Experience { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+    }
+
+    public class Researcher
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+        public List<string> ResearchAreas { get; set; } = new();
+    }
+} 

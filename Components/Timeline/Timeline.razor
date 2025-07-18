@@ -1,0 +1,242 @@
+@using CenterOfExcellence.Components.Common.Buttons
+
+<section class="py-16 px-4 ">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+            <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-4">Our Journey Through Time</h2>
+            <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 max-w-3xl mx-auto">
+                From humble beginnings to becoming a leading diagnostic laboratory, discover the milestones that shaped our commitment to healthcare excellence.
+            </p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="relative">
+            <!-- Timeline Line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-purple-600 h-full hidden lg:block"></div>
+
+            <!-- Timeline Items -->
+            <div class="space-y-16">
+                @foreach (var milestone in milestones)
+                {
+                    <div class="relative">
+                        <!-- Timeline Item -->
+                        <div class="flex flex-col lg:flex-row items-center gap-12 @(milestone.IsLeft ? "lg:flex-row-reverse" : "")">
+                            
+                            <!-- Content Section -->
+                            <div class="flex-1 @(milestone.IsLeft ? "lg:text-right" : "lg:text-left") text-center lg:text-left">
+                                <div class="bg-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition-all duration-300 border-l-4 border-blue-500">
+                                    
+                                    <!-- Year Badge -->
+                                    <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full mb-6">
+                                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                                        <span class="font-subHeading text-[16px]">@milestone.Year</span>
+                                    </div>
+
+                                    <!-- Title -->
+                                    <h3 class="font-heading text-[28px] leading-heading text-gray-800 mb-4">@milestone.Title</h3>
+                                    
+                                    <!-- Description -->
+                                    <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 mb-6">@milestone.Description</p>
+                                    
+                                    <!-- Achievements Row -->
+                                    @if (milestone.Achievements != null && milestone.Achievements.Any())
+                                    {
+                                        <div class="mb-6">
+                                            <h4 class="font-subHeading text-[18px] leading-subHeading text-gray-800 mb-4">Key Achievements</h4>
+                                            <div class="space-y-3">
+                                                @foreach (var achievement in milestone.Achievements)
+                                                {
+                                                    <div class="flex items-start @(milestone.IsLeft ? "lg:justify-end" : "")">
+                                                        <i class="fa-solid fa-check-circle text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                                        <span class="font-paragraph text-[16px] leading-paragraph text-gray-700">@achievement</span>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+
+                                    <!-- Stats Row -->
+                                    @if (milestone.Stats != null && milestone.Stats.Any())
+                                    {
+                                        <div>
+                                            <h4 class="font-subHeading text-[18px] leading-subHeading text-gray-800 mb-4">Impact Numbers</h4>
+                                            <div class="grid grid-cols-2 gap-4">
+                                                @foreach (var stat in milestone.Stats)
+                                                {
+                                                    <div class="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+                                                        <div class="font-heading text-[24px] leading-heading text-blue-600 mb-1">@stat.Value</div>
+                                                        <div class="font-paragraph text-[14px] leading-paragraph text-gray-600">@stat.Label</div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+                            <!-- Icon Section -->
+                            <div class="flex-1 flex justify-center">
+                                <div class="relative w-72 h-72 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-10 flex items-center justify-center shadow-2xl transform hover:rotate-2 transition-all duration-300">
+                                    
+                                    <!-- Main Icon -->
+                                    <div class="text-white text-9xl mb-6">
+                                        <i class="@milestone.Icon"></i>
+                                    </div>
+                                    
+                                    <!-- Category Badge -->
+                                    <div class="absolute bottom-6 left-6 right-6">
+                                        <div class="bg-white/95 backdrop-blur-sm rounded-xl p-4 text-center shadow-lg">
+                                            <span class="font-subHeading text-[16px] text-gray-800">@milestone.Category</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Decorative Elements -->
+                                    <div class="absolute top-6 right-6 w-10 h-10 bg-white/20 rounded-full"></div>
+                                    <div class="absolute bottom-12 right-12 w-5 h-5 bg-white/30 rounded-full"></div>
+                                    <div class="absolute top-12 left-6 w-4 h-4 bg-white/40 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Dot (Desktop) -->
+                            <div class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white shadow-lg">
+                                <div class="w-3 h-3 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@code {
+    private List<TimelineMilestone> milestones = new()
+    {
+        new TimelineMilestone
+        {
+            Year = "1995",
+            Title = "Foundation & Vision",
+            Description = "Dr Lal PathLabs was established with a vision to provide accurate and reliable diagnostic services to every Indian household. Our journey began with a single laboratory and a commitment to excellence in healthcare diagnostics.",
+            Category = "Foundation",
+            Icon = "fa-seedling",
+            IsLeft = false,
+            Achievements = new List<string> 
+            { 
+                "First laboratory established in Delhi",
+                "Started with 5 dedicated employees", 
+                "Basic pathology and biochemistry services",
+                "Commitment to quality and accuracy"
+            }
+        },
+        new TimelineMilestone
+        {
+            Year = "2005",
+            Title = "Expansion & Technology",
+            Description = "Major expansion phase with state-of-the-art technology and automated systems for faster, more accurate results. We expanded our network across multiple cities and introduced advanced diagnostic capabilities.",
+            Category = "Technology",
+            Icon = "fa-microscope",
+            IsLeft = true,
+            Achievements = new List<string> 
+            { 
+                "100+ centers across major Indian cities",
+                "Advanced automation and robotics systems", 
+                "Digital reporting and result management",
+                "Introduction of specialized diagnostic tests"
+            },
+            Stats = new List<TimelineStat> 
+            { 
+                new TimelineStat { Value = "100+", Label = "Centers" },
+                new TimelineStat { Value = "200+", Label = "Tests" }
+            }
+        },
+        new TimelineMilestone
+        {
+            Year = "2015",
+            Title = "Digital Revolution",
+            Description = "Complete digital transformation with online booking, mobile apps, and real-time report tracking. We embraced technology to make healthcare more accessible and convenient for our patients.",
+            Category = "Digital",
+            Icon = "fa-mobile-alt",
+            IsLeft = false,
+            Achievements = new List<string> 
+            { 
+                "Mobile app launched with 1M+ downloads",
+                "Online booking and appointment system", 
+                "Real-time report tracking and notifications",
+                "Digital health records and patient portal"
+            },
+            Stats = new List<TimelineStat> 
+            { 
+                new TimelineStat { Value = "1M+", Label = "App Downloads" },
+                new TimelineStat { Value = "24/7", Label = "Digital Support" }
+            }
+        },
+        new TimelineMilestone
+        {
+            Year = "2020",
+            Title = "COVID-19 Response",
+            Description = "Pioneered COVID-19 testing with rapid response, home collection, and drive-through testing facilities. We played a crucial role in the nation's fight against the pandemic.",
+            Category = "Innovation",
+            Icon = "fa-shield-virus",
+            IsLeft = true,
+            Achievements = new List<string> 
+            { 
+                "500+ COVID-19 testing centers nationwide",
+                "Home collection service for safety", 
+                "Drive-through testing facilities",
+                "Rapid PCR and antigen testing capabilities"
+            },
+            Stats = new List<TimelineStat> 
+            { 
+                new TimelineStat { Value = "500K+", Label = "Tests Conducted" },
+                new TimelineStat { Value = "100%", Label = "Safety Protocols" }
+            }
+        },
+        new TimelineMilestone
+        {
+            Year = "2025",
+            Title = "Future of Healthcare",
+            Description = "Leading the future with AI-powered diagnostics, personalized medicine, and preventive healthcare solutions. We're embracing cutting-edge technology to revolutionize healthcare delivery.",
+            Category = "Future",
+            Icon = "fa-robot",
+            IsLeft = false,
+            Achievements = new List<string> 
+            { 
+                "AI-powered diagnostic assistance",
+                "Personalized medicine and genomics", 
+                "Preventive healthcare programs",
+                "Advanced imaging and radiology services"
+            },
+            Stats = new List<TimelineStat> 
+            { 
+                new TimelineStat { Value = "280+", Label = "Centers" },
+                new TimelineStat { Value = "50M+", Label = "Tests Conducted" }
+            }
+        }
+    };
+
+    private void HandleExploreServices()
+    {
+        Console.WriteLine("Explore services clicked!");
+        // Navigate to services page or scroll to services section
+    }
+
+    public class TimelineMilestone
+    {
+        public string Year { get; set; } = string.Empty;
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Category { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+        public bool IsLeft { get; set; }
+        public List<string>? Achievements { get; set; }
+        public List<TimelineStat>? Stats { get; set; }
+    }
+
+    public class TimelineStat
+    {
+        public string Value { get; set; } = string.Empty;
+        public string Label { get; set; } = string.Empty;
+    }
+} 

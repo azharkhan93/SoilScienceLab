@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets/images/globe2.png"
     },
     {
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js",
+      "PackagePath": "staticwebassets/js/footer.js"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CenterOfExcellence.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R4nyCA1flnNGM7LVs4CgqaQpUG+EdAMIagk0lyIY2/w=",
+  "Hash": "Nckfg45mDyQba5oSuMlQmk54alev4QhuVL1vBLsXHro=",
   "Source": "CenterOfExcellence",
   "BasePath": "_content/CenterOfExcellence",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz",
+      "SourceId": "CenterOfExcellence",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/CenterOfExcellence",
+      "RelativePath": "js/footer#[.{fingerprint=tm3yp693rp}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "mbjysvg3aa",
+      "Integrity": "rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js"
+    },
     {
       "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "SourceId": "CenterOfExcellence",
@@ -38,12 +59,12 @@
       "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js"
     },
     {
-      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-30xyo5d3ct.gz",
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-vc8insfwuy.gz",
       "SourceId": "CenterOfExcellence",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CenterOfExcellence",
-      "RelativePath": "css/build#[.{fingerprint=30xyo5d3ct}]?.css.gz",
+      "RelativePath": "css/build#[.{fingerprint=vc8insfwuy}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +73,8 @@
       "RelatedAsset": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "p228l0tiie",
-      "Integrity": "f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM=",
+      "Fingerprint": "ttrrxwaleg",
+      "Integrity": "oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css"
@@ -136,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "30xyo5d3ct",
-      "Integrity": "bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag=",
+      "Fingerprint": "vc8insfwuy",
+      "Integrity": "Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/build.css"
@@ -246,6 +267,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/globe2.png"
+    },
+    {
+      "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js",
+      "SourceId": "CenterOfExcellence",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/",
+      "BasePath": "_content/CenterOfExcellence",
+      "RelativePath": "js/footer#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tm3yp693rp",
+      "Integrity": "5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/footer.js"
     },
     {
       "Identity": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/Theme.js",
@@ -569,13 +611,13 @@
       ]
     },
     {
-      "Route": "css/build.30xyo5d3ct.css",
-      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-30xyo5d3ct.gz",
+      "Route": "css/build.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-vc8insfwuy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000157505119"
+          "Quality": "0.000174733531"
         }
       ],
       "ResponseHeaders": [
@@ -585,19 +627,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6348"
+          "Value": "5722"
         },
         {
           "Name": "ETag",
-          "Value": "\"f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM=\""
+          "Value": "\"oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 18:49:43 GMT"
+          "Value": "Fri, 18 Jul 2025 18:55:46 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -613,26 +655,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag=\""
+          "Value": "W/\"Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "30xyo5d3ct"
-        },
-        {
-          "Name": "label",
-          "Value": "css/build.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag="
+          "Value": "sha256-Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA="
         }
       ]
     },
     {
-      "Route": "css/build.30xyo5d3ct.css",
+      "Route": "css/build.css",
       "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -642,7 +676,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29417"
+          "Value": "25084"
         },
         {
           "Name": "Content-Type",
@@ -650,11 +684,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag=\""
+          "Value": "\"Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 18:49:43 GMT"
+          "Value": "Fri, 18 Jul 2025 18:55:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA="
+        }
+      ]
+    },
+    {
+      "Route": "css/build.css.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-vc8insfwuy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:55:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA="
+        }
+      ]
+    },
+    {
+      "Route": "css/build.vc8insfwuy.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-vc8insfwuy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000174733531"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5722"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:55:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vc8insfwuy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/build.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA="
+        }
+      ]
+    },
+    {
+      "Route": "css/build.vc8insfwuy.css",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25084"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:55:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -664,7 +843,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "30xyo5d3ct"
+          "Value": "vc8insfwuy"
         },
         {
           "Name": "label",
@@ -672,13 +851,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag="
+          "Value": "sha256-Ma4rGVYyinfSVgBLO0jbS4qDw3ZS3Qv618gpk7GHqYA="
         }
       ]
     },
     {
-      "Route": "css/build.30xyo5d3ct.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-30xyo5d3ct.gz",
+      "Route": "css/build.vc8insfwuy.css.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-vc8insfwuy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -687,7 +866,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6348"
+          "Value": "5722"
         },
         {
           "Name": "Content-Type",
@@ -695,11 +874,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM=\""
+          "Value": "\"oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 18:49:43 GMT"
+          "Value": "Fri, 18 Jul 2025 18:55:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -717,7 +896,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "30xyo5d3ct"
+          "Value": "vc8insfwuy"
         },
         {
           "Name": "label",
@@ -725,144 +904,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM="
-        }
-      ]
-    },
-    {
-      "Route": "css/build.css",
-      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-30xyo5d3ct.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000157505119"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6348"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 18:49:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag="
-        }
-      ]
-    },
-    {
-      "Route": "css/build.css",
-      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/css/build.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29417"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 18:49:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bUgswJHA276bUjfi9robbKhxxtfg2v6GW1/nhhh/Wag="
-        }
-      ]
-    },
-    {
-      "Route": "css/build.css.gz",
-      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-30xyo5d3ct.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6348"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 18:49:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-f76g1Pa1/LubqR+3ELbxLxrh8wS7nFrllG/MQPGCQzM="
+          "Value": "sha256-oebl5T9+WhtlLjEvP9SUQRPBfiyXFKj/C3R3h8gJulA="
         }
       ]
     },
@@ -1493,6 +1535,304 @@
       ]
     },
     {
+      "Route": "js/footer.js",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006578947368"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek="
+        }
+      ]
+    },
+    {
+      "Route": "js/footer.js",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek="
+        }
+      ]
+    },
+    {
+      "Route": "js/footer.js.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk="
+        }
+      ]
+    },
+    {
+      "Route": "js/footer.tm3yp693rp.js",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006578947368"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tm3yp693rp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/footer.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek="
+        }
+      ]
+    },
+    {
+      "Route": "js/footer.tm3yp693rp.js",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tm3yp693rp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/footer.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ScKoooGupwhqTwgv6Ww3BocGWZY/OV5mML5q0ooQek="
+        }
+      ]
+    },
+    {
+      "Route": "js/footer.tm3yp693rp.js.gz",
+      "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 18:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tm3yp693rp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/footer.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rjHC+MenKUrS9O8KJkt4lBw30O0ANIIxIsCKI1Xgxqk="
+        }
+      ]
+    },
+    {
       "Route": "Theme.8ye1w644wp.js",
       "AssetFile": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/5jnwq00qw0-8ye1w644wp.gz",
       "Selectors": [
@@ -1517,7 +1857,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 19:09:46 GMT"
+          "Value": "Fri, 18 Jul 2025 18:52:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1578,7 +1918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 19:09:46 GMT"
+          "Value": "Fri, 18 Jul 2025 18:52:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1623,7 +1963,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 19:09:46 GMT"
+          "Value": "Fri, 18 Jul 2025 18:52:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1678,7 +2018,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 19:09:46 GMT"
+          "Value": "Fri, 18 Jul 2025 18:52:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1731,7 +2071,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 19:09:46 GMT"
+          "Value": "Fri, 18 Jul 2025 18:52:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1768,7 +2108,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Mar 2025 19:09:46 GMT"
+          "Value": "Fri, 18 Jul 2025 18:52:52 GMT"
         },
         {
           "Name": "Cache-Control",

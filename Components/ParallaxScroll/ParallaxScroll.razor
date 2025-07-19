@@ -1,0 +1,109 @@
+@inject IJSRuntime JS
+
+<div class="parallax-container">
+    <div class="parallax-wrapper">
+        @ChildContent
+    </div>
+</div>
+
+<style>
+    .parallax-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .parallax-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .parallax-section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .parallax-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-size: cover;
+        background-position: center;
+        transform: translateY(0);
+        will-change: transform;
+    }
+
+    .parallax-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        color: white;
+        padding: 2rem;
+    }
+
+    .reveal-element {
+        opacity: 0;
+        transform: translateY(100px) scale(0.8);
+        transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        position: relative;
+        z-index: 10;
+    }
+
+    .reveal-element.revealed {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .stagger-element {
+        opacity: 0;
+        transform: translateY(80px) scale(0.7);
+        position: relative;
+        z-index: 20;
+    }
+
+    .stagger-element.revealed {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .timeline-animation {
+        opacity: 0;
+        transform: translateY(120px) scale(0.8);
+        position: relative;
+        z-index: 30;
+    }
+
+    .timeline-animation.revealed {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    /* Enhanced layering effects */
+    .parallax-wrapper > div {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .parallax-wrapper > div:not(:first-child) {
+        margin-top: -1rem;
+    }
+</style>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeParallaxScroll");
+        }
+    }
+} 

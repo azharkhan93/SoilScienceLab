@@ -99,6 +99,7 @@ namespace CenterOfExcellence.Constants
             {
                 new TimelineMilestoneData
                 {
+                    Index = 0,
                     Year = "1995",
                     Title = "Foundation & Vision",
                     Description = "Dr. Arvind Lal established the first laboratory with a vision to revolutionize healthcare diagnostics in India. Started with a small team and basic equipment, focusing on accuracy and patient care.",
@@ -119,6 +120,7 @@ namespace CenterOfExcellence.Constants
                 },
                 new TimelineMilestoneData
                 {
+                    Index = 1,
                     Year = "2005",
                     Title = "Expansion & Technology",
                     Description = "Decade of growth marked by significant expansion across major cities. Introduced advanced automation and cutting-edge diagnostic technologies, setting new industry standards.",
@@ -139,6 +141,7 @@ namespace CenterOfExcellence.Constants
                 },
                 new TimelineMilestoneData
                 {
+                    Index = 2,
                     Year = "2015",
                     Title = "Digital Transformation",
                     Description = "Pioneered digital health solutions and online booking systems. Launched mobile apps and integrated healthcare platforms, making diagnostics accessible to millions.",
@@ -324,6 +327,7 @@ namespace CenterOfExcellence.Constants
 
     public class TimelineMilestoneData
     {
+        public int Index { get; set; }
         public string Year { get; set; } = string.Empty;
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;

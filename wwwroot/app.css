@@ -57,3 +57,128 @@ html, body {
     }
   } */
 
+/* Hero Carousel Styles */
+/* .hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    will-change: opacity;
+    overflow: hidden;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.carousel-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-content h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+.carousel-content p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+}
+
+.carousel-thumbnails {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 30;
+}
+
+.carousel-thumbnail {
+    width: 60px;
+    height: 40px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-thumbnail:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.carousel-thumbnail.active {
+    opacity: 1;
+    border-color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+} */
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .carousel-content {
+        padding: 1.5rem;
+    }
+    
+    .carousel-thumbnails {
+        bottom: 1rem;
+        right: 1rem;
+        gap: 0.5rem;
+    }
+    
+    .carousel-thumbnail {
+        width: 50px;
+        height: 35px;
+    }
+} */
+
+/* @media (max-width: 480px) {
+    .carousel-content {
+        padding: 1rem;
+    }
+    
+    .carousel-thumbnail {
+        width: 40px;
+        height: 30px;
+    }
+} */
+

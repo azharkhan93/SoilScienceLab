@@ -4,12 +4,14 @@
 <section class="py-16 px-4 ">
     <div class="max-w-7xl mx-auto">
        
-        <div class="text-center mb-16">
-            <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-4">Our Journey Through Time</h2>
-            <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 max-w-3xl mx-auto">
-                From humble beginnings to becoming a leading diagnostic laboratory, discover the milestones that shaped our commitment to healthcare excellence.
-            </p>
-        </div>
+        <GSAPAnimation AnimationType="scrollTrigger" Duration="1.0">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-4">Our Journey Through Time</h2>
+                <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 max-w-3xl mx-auto">
+                    From humble beginnings to becoming a leading diagnostic laboratory, discover the milestones that shaped our commitment to healthcare excellence.
+                </p>
+            </div>
+        </GSAPAnimation>
 
        
         <div class="relative">
@@ -20,10 +22,10 @@
             <div class="space-y-16">
                 @foreach (var milestone in AppConstants.Timeline.Milestones)
                 {
-                    <div class="relative">
+                    <GSAPAnimation AnimationType="scrollTrigger" Duration="0.8" Delay="@(milestone.Index * 0.2)">
+                        <div class="relative">
                        
                         <div class="flex flex-col lg:flex-row items-center gap-12 @(milestone.IsLeft ? "lg:flex-row-reverse" : "")">
-                            
                             <!-- Content Section -->
                             <div class="flex-1 @(milestone.IsLeft ? "lg:text-right" : "lg:text-left") text-center lg:text-left">
                                 <div class="bg-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition-all duration-300 border-l-4 border-blue-500">
@@ -105,6 +107,7 @@
                             </div>
                         </div>
                     </div>
+                </GSAPAnimation>
                 }
             </div>
         </div>

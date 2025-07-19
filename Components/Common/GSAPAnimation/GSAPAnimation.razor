@@ -1,0 +1,82 @@
+@inject IJSRuntime JS
+
+<div @ref="elementRef" @attributes="AdditionalAttributes">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string AnimationType { get; set; } = "fadeIn";
+    [Parameter] public double Duration { get; set; } = 0.8;
+    [Parameter] public double Delay { get; set; } = 0;
+    [Parameter] public string Trigger { get; set; } = "top 80%";
+    [Parameter] public Dictionary<string, object>? AdditionalAttributes { get; set; }
+
+    private ElementReference elementRef;
+    private bool isInitialized = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !isInitialized)
+        {
+            isInitialized = true;
+            await JS.InvokeVoidAsync("gsapUtils.init");
+            
+            await Task.Delay(100);
+            
+            await AnimateElement();
+        }
+    }
+
+    private async Task AnimateElement()
+    {
+        try
+        {
+            switch (AnimationType.ToLower())
+            {
+                case "fadein":
+                    await JS.InvokeVoidAsync("gsapUtils.fadeIn", elementRef, Duration, Delay);
+                    break;
+                case "slideinleft":
+                    await JS.InvokeVoidAsync("gsapUtils.slideInLeft", elementRef, Duration, Delay);
+                    break;
+                case "slideinright":
+                    await JS.InvokeVoidAsync("gsapUtils.slideInRight", elementRef, Duration, Delay);
+                    break;
+                case "scalein":
+                    await JS.InvokeVoidAsync("gsapUtils.scaleIn", elementRef, Duration, Delay);
+                    break;
+                case "scrolltrigger":
+                    var animation = new { from = new { opacity = 0, y = 30 }, to = new { opacity = 1, y = 0 }, duration = Duration, ease = "power2.out" };
+                    await JS.InvokeVoidAsync("gsapUtils.scrollTrigger", elementRef, animation, Trigger);
+                    break;
+                case "fromto":
+                    var fromVars = new { opacity = 0, y = 50, scale = 0.8 };
+                    var toVars = new { opacity = 1, y = 0, scale = 1, duration = Duration, ease = "power2.out" };
+                    await JS.InvokeVoidAsync("gsapUtils.fromTo", elementRef, fromVars, toVars);
+                    break;
+                case "timeline":
+                    await JS.InvokeVoidAsync("gsapUtils.timeline");
+                    break;
+                case "advancedscroll":
+                    var config = new { 
+                        trigger = elementRef,
+                        start = Trigger,
+                        animation = new { 
+                            from = new { opacity = 0, y = 30, rotation = -5 }, 
+                            to = new { opacity = 1, y = 0, rotation = 0, duration = Duration, ease = "power2.out" } 
+                        }
+                    };
+                    await JS.InvokeVoidAsync("gsapUtils.advancedScrollTrigger", elementRef, config);
+                    break;
+                default:
+                    await JS.InvokeVoidAsync("gsapUtils.fadeIn", elementRef, Duration, Delay);
+                    break;
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"GSAP Animation error: {ex.Message}");
+        }
+    }
+} 

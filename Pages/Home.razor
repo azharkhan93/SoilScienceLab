@@ -1,17 +1,41 @@
 ﻿@page "/"
 <PageTitle>Home</PageTitle>
 
-<div class=" flex items-center justify-center flex-col">
-    <HeroSection />
-    <WhyDrLalPathLabs />
-    <Timeline />
-    <Founders />
-    @* <Team /> *@
-    <Testimonials />
-    <QualitySection />
-    @* <PopularTestSection /> *@
-    <CallBackCTA />
-</div>
+<ParallaxScroll>
+    <div class="flex items-center justify-center flex-col">
+        
+            <HeroSection />
+      
+        
+        <div class="reveal-element">
+            <WhyDrLalPathLabs />
+        </div>
+        
+        <div class="timeline-animation">
+            <Timeline />
+        </div>
+        
+        <div class="reveal-element">
+            <Founders />
+        </div>
+        
+        @* <Team /> *@
+        
+        <div class="stagger-element">
+            <Testimonials />
+        </div>
+        
+        <div class="reveal-element">
+            <QualitySection />
+        </div>
+        
+        @* <PopularTestSection /> *@
+        
+        <div class="reveal-element">
+            <CallBackCTA />
+        </div>
+    </div>
+</ParallaxScroll>
 
 
 

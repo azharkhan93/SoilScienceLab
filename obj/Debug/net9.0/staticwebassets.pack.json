@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets/js/parallax-scroll.js"
     },
     {
+      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/testimonial-slider.js",
+      "PackagePath": "staticwebassets/js/testimonial-slider.js"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CenterOfExcellence.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

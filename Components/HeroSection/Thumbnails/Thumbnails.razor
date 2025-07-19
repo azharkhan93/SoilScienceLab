@@ -6,7 +6,7 @@
         <div class="thumbnail @(slide.Id == ActiveSlideId ? "active" : "")" data-thumb="@slide.Id">
             <img src="@slide.ThumbnailImage" 
                  alt="@slide.AltText" 
-                 class=" w-24 md:w-[120px] h-16 object-cover rounded-lg cursor-pointer border-2 border-white/50 hover:border-white transition-all duration-300"
+                 class=" w-16 md:w-[120px] h-16 object-cover rounded-lg cursor-pointer border-2 border-white/50 hover:border-white transition-all duration-300"
                  @onclick="async () => await OnSlideChange.InvokeAsync(slide.Id)" />
         </div>
     }

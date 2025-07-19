@@ -1,0 +1,42 @@
+@page "/about"
+@using CenterOfExcellence.Constants
+
+<PageTitle>About Us - Dr Lal PathLabs</PageTitle>
+
+<div class="min-h-screen">
+    <PageHeader Heading="About"
+        Intro="Discover our journey of excellence in diagnostic healthcare, from humble beginnings to becoming India's most trusted laboratory network."
+        BackgroundImage="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+        BackLinkText="Back to Home" BackLinkUrl="/" />
+
+
+
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+
+
+
+            <div class="text-center">
+                <h2 class="font-heading text-[40px] leading-heading text-gray-800 mb-8">Our Expert Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    @foreach (var member in teamMembers)
+                    {
+                        <TeamMember IconClass="@member.IconClass" Title="@member.Title" Description="@member.Description"
+                            BgColorClass="@member.BgColorClass" IconColorClass="@member.IconColorClass" />
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    private List<(string IconClass, string Title, string Description, string BgColorClass, string IconColorClass)>
+    teamMembers = new()
+    {
+("fa-solid fa-user-md", "Medical Directors", "Leading healthcare experts", "bg-blue-100", "text-blue-600"),
+("fa-solid fa-flask", "Lab Technicians", "Skilled professionals", "bg-green-100", "text-green-600"),
+("fa-solid fa-microscope", "Scientists", "Research & development", "bg-purple-100", "text-purple-600"),
+("fa-solid fa-headset", "Support Staff", "Dedicated service team", "bg-orange-100", "text-orange-600")
+    };
+}

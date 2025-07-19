@@ -1,0 +1,125 @@
+@using CenterOfExcellence.Components.Forms.InputField
+@using CenterOfExcellence.Components.Common.Buttons
+
+<div class="bg-white  p-8 ">
+    <h2 class="font-heading text-[32px] leading-heading text-gray-800 mb-6">Send us a Message</h2>
+    <form @onsubmit="HandleSubmit" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <InputField 
+                Label="First Name"
+                Placeholder="Enter your first name" 
+                Value="@contactForm.FirstName" 
+                ValueChanged="@(value => contactForm.FirstName = value)" 
+                Type="text" 
+                MaxLength="50"
+                IsRequired="true" />
+            
+            <InputField 
+                Label="Last Name"
+                Placeholder="Enter your last name" 
+                Value="@contactForm.LastName" 
+                ValueChanged="@(value => contactForm.LastName = value)" 
+                Type="text" 
+                MaxLength="50" />
+        </div>
+        
+        <InputField 
+            Label="Email Address"
+            Placeholder="Enter your email address" 
+            Value="@contactForm.Email" 
+            ValueChanged="@(value => contactForm.Email = value)" 
+            Type="email" 
+            MaxLength="100"
+            IsRequired="true" />
+        
+        <InputField 
+            Label="Phone Number"
+            Placeholder="Enter your phone number" 
+            Value="@contactForm.Phone" 
+            ValueChanged="@(value => contactForm.Phone = value)" 
+            Type="tel" 
+            CountryCode="+91" 
+            MaxLength="15" />
+        
+        <div>
+            <label class="block font-paragraph text-[16px] text-gray-700 mb-2">Subject</label>
+            <select @bind="contactForm.Subject" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-paragraph text-[16px]">
+                <option value="">Select a subject</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Test Booking">Test Booking</option>
+                <option value="Report Query">Report Query</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+        </div>
+        
+        <div>
+            <label class="block font-paragraph text-[16px] text-gray-700 mb-2">Message</label>
+            <textarea @bind="contactForm.Message" rows="4"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-paragraph text-[16px]"
+                      placeholder="Enter your message here..."></textarea>
+        </div>
+        
+        <CustomButton Text="Send Message" Variant="ButtonVariant.Primary" Icon="fa-paper-plane" OnClick="HandleSubmit" />
+    </form>
+</div>
+
+@code {
+    private ContactFormData contactForm = new();
+
+    [Parameter] public EventCallback<ContactFormData> OnSubmit { get; set; }
+
+    private async Task HandleSubmit()
+    {
+        if (ValidateForm())
+        {
+            await OnSubmit.InvokeAsync(contactForm);
+            ResetForm();
+        }
+    }
+
+    private bool ValidateForm()
+    {
+        if (string.IsNullOrEmpty(contactForm.FirstName))
+        {
+            // Show error: First name is required
+            return false;
+        }
+
+        if (string.IsNullOrEmpty(contactForm.Email))
+        {
+            // Show error: Email is required
+            return false;
+        }
+
+        if (string.IsNullOrEmpty(contactForm.Subject))
+        {
+            // Show error: Subject is required
+            return false;
+        }
+
+        if (string.IsNullOrEmpty(contactForm.Message))
+        {
+            // Show error: Message is required
+            return false;
+        }
+
+        return true;
+    }
+
+    private void ResetForm()
+    {
+        contactForm = new ContactFormData();
+    }
+
+    public class ContactFormData
+    {
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
+        public string Subject { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+    }
+} 

@@ -36,12 +36,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vQnV0dG9ucy9DdXN0b21CdXR0b24vQ3VzdG9tQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/ContactCard/ContactCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250YWN0Q2FyZC9Db250YWN0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/DesktopNav/DesktopNav.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9EZXNrdG9wTmF2L0Rlc2t0b3BOYXYucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Footer/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Forms/ContactForm/ContactForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb3Jtcy9Db250YWN0Rm9ybS9Db250YWN0Rm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Forms/InputField/InputField.razor]
@@ -72,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9OYXZNZW51L05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/PageHeader/PageHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlSGVhZGVyL1BhZ2VIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/PopularTestSection/PopularTestSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qb3B1bGFyVGVzdFNlY3Rpb24vUG9wdWxhclRlc3RTZWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -88,6 +100,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9RdWFsaXR5U2VjdGlvbi9RdWFsaXR5U2VjdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/SampleManagement/SampleRegistration/SampleRegistrationForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TYW1wbGVNYW5hZ2VtZW50L1NhbXBsZVJlZ2lzdHJhdGlvbi9TYW1wbGVSZWdpc3RyYXRpb25Gb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/SignInModal/SignInModal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaWduSW5Nb2RhbC9TaWduSW5Nb2RhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,8 +112,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TcGxhc2hTY3JlZW4vU3BsYXNoU2NyZWVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/StatisticsCard/StatisticsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TdGF0aXN0aWNzQ2FyZC9TdGF0aXN0aWNzQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Team/Team.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UZWFtL1RlYW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/TeamMember/TeamMember.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UZWFtTWVtYmVyL1RlYW1NZW1iZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/TestCardsList/TestCardsList.razor]
@@ -128,8 +152,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Pages/Error.razor]
@@ -138,6 +166,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Pages/SampleRegistration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2FtcGxlUmVnaXN0cmF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Routes.razor]

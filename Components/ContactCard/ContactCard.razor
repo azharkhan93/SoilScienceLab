@@ -1,0 +1,22 @@
+@using CenterOfExcellence.Components.ContactCard
+
+<div class="bg-white rounded-xl p-8 shadow-lg text-center border-t-2 border-red-500 border-b-2">
+    <div class="w-16 h-16 @BgColorClass rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="@IconClass text-2xl @IconColorClass"></i>
+    </div>
+    <h3 class="font-subHeading text-[22px] leading-subHeading text-gray-800 mb-3">@Title</h3>
+    <p class="font-paragraph text-[16px] leading-paragraph text-gray-600 mb-2">@Description</p>
+    <a href="@Link" class="font-paragraph text-[16px] leading-paragraph text-blue-600 hover:text-blue-800 transition-colors">
+        @Value
+    </a>
+</div>
+
+@code {
+    [Parameter] public string IconClass { get; set; } = string.Empty;
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Description { get; set; } = string.Empty;
+    [Parameter] public string Value { get; set; } = string.Empty;
+    [Parameter] public string Link { get; set; } = "#";
+    [Parameter] public string BgColorClass { get; set; } = "bg-blue-100";
+    [Parameter] public string IconColorClass { get; set; } = "text-blue-600";
+} 

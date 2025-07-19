@@ -1,0 +1,17 @@
+@using CenterOfExcellence.Components.TeamMember
+
+<div class="bg-white rounded-xl p-6 shadow-lg">
+    <div class="w-24 h-24 @BgColorClass rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="@IconClass text-3xl @IconColorClass"></i>
+    </div>
+    <h3 class="font-subHeading text-[20px] leading-subHeading text-gray-800 mb-2">@Title</h3>
+    <p class="font-paragraph text-[14px] leading-paragraph text-gray-600">@Description</p>
+</div>
+
+@code {
+    [Parameter] public string IconClass { get; set; } = string.Empty;
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Description { get; set; } = string.Empty;
+    [Parameter] public string BgColorClass { get; set; } = "bg-blue-100";
+    [Parameter] public string IconColorClass { get; set; } = "text-blue-600";
+} 

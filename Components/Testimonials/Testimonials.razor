@@ -1,9 +1,11 @@
 
 
+@using CenterOfExcellence.Constants
+
 @code {
-    List<CenterOfExcellence.Components.TestimonialData.TestimonialData> testimonialList = new()
+    private List<TestimonialData> testimonialList = new()
     {
-        new CenterOfExcellence.Components.TestimonialData.TestimonialData 
+        new TestimonialData 
         {
             Name = "Sarah Johnson",
             Location = "Delhi, India",
@@ -12,7 +14,7 @@
             TestimonialText = "They provided exceptional service during my recent health checkup. The staff was professional, the sample collection was painless, and I received my reports within 24 hours. Highly recommend their services!",
             StarRating = 5
         },
-        new CenterOfExcellence.Components.TestimonialData.TestimonialData
+        new TestimonialData
         {
             Name = "Rajesh Kumar",
             Location = "Mumbai, India",
@@ -21,7 +23,7 @@
             TestimonialText = "Outstanding diagnostic services! The home collection facility was very convenient and the results were accurate. Dr Lal PathLabs truly lives up to its reputation.",
             StarRating = 5
         },
-        new CenterOfExcellence.Components.TestimonialData.TestimonialData
+        new TestimonialData
         {
             Name = "Priya Sharma",
             Location = "Bangalore, India",

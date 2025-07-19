@@ -1,0 +1,80 @@
+@page "/contact"
+@using CenterOfExcellence.Constants
+
+<PageTitle>Contact Us - Dr Lal PathLabs</PageTitle>
+
+<div class="min-h-screen">
+    <PageHeader 
+        Heading="Contact Us"
+        Intro="Get in touch with our team for any inquiries, support, or to schedule your diagnostic tests. We're here to help you with all your healthcare needs."
+        BackgroundImage="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+        BackLinkText="Back to Home"
+        BackLinkUrl="/" />
+
+    
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+          
+            <div class="flex flex-wrap justify-center gap-8 mb-16">
+                @foreach (var contact in AppConstants.Contact.ContactInfo)
+                {
+                    <ContactCard 
+                        IconClass="@contact.IconClass"
+                        Title="@contact.Title"
+                        Description="@contact.Description"
+                        Value="@contact.Value"
+                        Link="@contact.Link"
+                        BgColorClass="@contact.BgColorClass"
+                        IconColorClass="@contact.IconColorClass" />
+                }
+            </div>
+
+            <!-- Contact Form and Map Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <!-- Contact Form -->
+                <ContactForm OnSubmit="HandleContactSubmit" />
+
+              
+                <div class="space-y-8">
+                    <!-- Map -->
+                    <div class="bg-white  p-6 ">
+                        <h3 class="font-heading text-[24px] leading-heading text-gray-800 mb-4">Our Location</h3>
+                        <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fa-solid fa-map-marker-alt text-4xl text-gray-400 mb-2"></i>
+                                <p class="font-paragraph text-[16px] text-gray-600">Interactive Map Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md">
+                        <h3 class="font-heading text-[24px] leading-heading text-gray-800 mb-4">Office Hours</h3>
+                        <div class="space-y-3">
+                            @foreach (var hour in AppConstants.Contact.OfficeHours)
+                            {
+                                <div class="flex justify-between items-center">
+                                    <span class="font-paragraph text-[16px] text-gray-700">@hour.Day</span>
+                                    <span class="font-paragraph text-[16px] text-gray-600">@hour.Time</span>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+@code {
+    private async Task HandleContactSubmit(ContactForm.ContactFormData formData)
+    {
+        // Handle form submission
+        // This would typically send the form data to a server
+        await Task.Delay(1000); // Simulate processing
+        
+        // You can access form data like:
+        // formData.FirstName, formData.Email, etc.
+    }
+} 

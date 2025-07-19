@@ -1,0 +1,15 @@
+@using CenterOfExcellence.Components.StatisticsCard
+
+<div class="text-center w-[47%] md:w-[35%] mb-6 shadow-md py-4 rounded-sm">
+    <div class="mb-4">
+        <i class="@IconClass text-5xl text-blue-950"></i>
+    </div>
+    <h3 class="font-heading text-[35px] leading-heading text-blue-950 mb-2">@Value</h3>
+    <p class="font-paragraph text-[18px] leading-paragraph text-gray-700">@Description</p>
+</div>
+
+@code {
+    [Parameter] public string IconClass { get; set; } = string.Empty;
+    [Parameter] public string Value { get; set; } = string.Empty;
+    [Parameter] public string Description { get; set; } = string.Empty;
+} 

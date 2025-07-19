@@ -1,18 +1,6 @@
 
 
-@code {
-    [Parameter] public string Label { get; set; } = string.Empty;
-    [Parameter] public string Placeholder { get; set; } = string.Empty;
-    [Parameter] public string Value { get; set; } = string.Empty;
-    [Parameter] public EventCallback<string> ValueChanged { get; set; }
-    [Parameter] public string Type { get; set; } = "text";
-    [Parameter] public string Icon { get; set; } = string.Empty;
-    [Parameter] public bool IsRequired { get; set; } = false;
-    [Parameter] public int MaxLength { get; set; } = 0;
-    [Parameter] public string ValidationMessage { get; set; } = string.Empty;
-    [Parameter] public bool ShowPasswordToggle { get; set; } = false;
-    [Parameter] public string CountryCode { get; set; } = string.Empty;
-}
+
 
 <div class="mb-4">
     @if (!string.IsNullOrEmpty(Label))
@@ -75,6 +63,18 @@
 </div>
 
 @code {
+    [Parameter] public string Label { get; set; } = string.Empty;
+    [Parameter] public string Placeholder { get; set; } = string.Empty;
+    [Parameter] public string Value { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> ValueChanged { get; set; }
+    [Parameter] public string Type { get; set; } = "text";
+    [Parameter] public string Icon { get; set; } = string.Empty;
+    [Parameter] public bool IsRequired { get; set; } = false;
+    [Parameter] public int MaxLength { get; set; } = 0;
+    [Parameter] public string ValidationMessage { get; set; } = string.Empty;
+    [Parameter] public bool ShowPasswordToggle { get; set; } = false;
+    [Parameter] public string CountryCode { get; set; } = string.Empty;
+
     private bool showPassword = false;
 
     private void TogglePassword()

@@ -1,4 +1,5 @@
 @inject IJSRuntime JS
+@using CenterOfExcellence.Constants
 
 <footer class="bg-gray-900 text-white py-12">
     <div class="max-w-7xl mx-auto px-6">
@@ -6,10 +7,9 @@
         <div class="flex flex-col lg:flex-row gap-8 mb-8">
             
             <div class="flex-1 space-y-4">
-                <h3 class="font-heading text-[24px] leading-heading text-white mb-4">Xyz Pvt Labs</h3>
+                <h3 class="font-heading text-[24px] leading-heading text-white mb-4">Dr Lal PathLabs</h3>
                 <p class="font-paragraph text-[16px] leading-paragraph text-gray-300">
-                    Leading diagnostic laboratory providing accurate and reliable medical testing services. 
-                    Committed to excellence in healthcare diagnostics with state-of-the-art technology.
+                    @AppConstants.Footer.CompanyDescription
                 </p>
                 <div class="flex space-x-4">
                     <a href="#" class="text-gray-400 hover:text-white transition-colors">
@@ -31,11 +31,10 @@
             <div class="flex-1 space-y-4">
                 <h4 class="font-subHeading text-[20px] leading-subHeading text-white mb-4">Quick Links</h4>
                 <ul class="space-y-2">
-                    <li><a href="/" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Home</a></li>
-                    <li><a href="/about" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="/services" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Our Services</a></li>
-                    <li><a href="/tests" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Lab Tests</a></li>
-                    <li><a href="/contact" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    @foreach (var link in AppConstants.Footer.QuickLinks)
+                    {
+                        <li><a href="@link.Url" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">@link.Text</a></li>
+                    }
                 </ul>
             </div>
 
@@ -43,11 +42,10 @@
             <div class="flex-1 space-y-4">
                 <h4 class="font-subHeading text-[20px] leading-subHeading text-white mb-4">Our Services</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Blood Tests</a></li>
-                    <li><a href="#" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Pathology</a></li>
-                    <li><a href="#" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Radiology</a></li>
-                    <li><a href="#" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Health Checkups</a></li>
-                    <li><a href="#" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">Home Collection</a></li>
+                    @foreach (var service in AppConstants.Footer.Services)
+                    {
+                        <li><a href="@service.Url" class="font-paragraph text-[16px] leading-paragraph text-gray-300 hover:text-white transition-colors">@service.Text</a></li>
+                    }
                 </ul>
             </div>
 
@@ -58,19 +56,19 @@
                     <div class="flex items-start space-x-3">
                         <i class="fa-solid fa-map-marker-alt text-blue-400 mt-1"></i>
                         <p class="font-paragraph text-[16px] leading-paragraph text-gray-300">
-                            123 Medical Center Dr, Healthcare City, HC 12345
+                            @AppConstants.Footer.ContactInfo.Address
                         </p>
                     </div>
                     <div class="flex items-center space-x-3">
                         <i class="fa-solid fa-phone text-blue-400"></i>
                         <p class="font-paragraph text-[16px] leading-paragraph text-gray-300">
-                            +91 6005493028
+                            @AppConstants.Footer.ContactInfo.Phone
                         </p>
                     </div>
                     <div class="flex items-center space-x-3">
                         <i class="fa-solid fa-envelope text-blue-400"></i>
                         <p class="font-paragraph text-[16px] leading-paragraph text-gray-300">
-                            info@drlalpathlabs.com
+                            @AppConstants.Footer.ContactInfo.Email
                         </p>
                     </div>
                     <div class="flex items-center space-x-3">

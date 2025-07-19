@@ -1,8 +1,9 @@
 @using CenterOfExcellence.Components.Common.Buttons
+@using CenterOfExcellence.Constants
 
 <section class="py-16 px-4 ">
     <div class="max-w-7xl mx-auto">
-        <!-- Header Section -->
+       
         <div class="text-center mb-16">
             <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-4">Our Journey Through Time</h2>
             <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 max-w-3xl mx-auto">
@@ -10,17 +11,17 @@
             </p>
         </div>
 
-        <!-- Timeline Container -->
+       
         <div class="relative">
-            <!-- Timeline Line -->
+           
             <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-purple-600 h-full hidden lg:block"></div>
 
-            <!-- Timeline Items -->
+           
             <div class="space-y-16">
-                @foreach (var milestone in milestones)
+                @foreach (var milestone in AppConstants.Timeline.Milestones)
                 {
                     <div class="relative">
-                        <!-- Timeline Item -->
+                       
                         <div class="flex flex-col lg:flex-row items-center gap-12 @(milestone.IsLeft ? "lg:flex-row-reverse" : "")">
                             
                             <!-- Content Section -->
@@ -112,131 +113,8 @@
 </section>
 
 @code {
-    private List<TimelineMilestone> milestones = new()
-    {
-        new TimelineMilestone
-        {
-            Year = "1995",
-            Title = "Foundation & Vision",
-            Description = "Dr Lal PathLabs was established with a vision to provide accurate and reliable diagnostic services to every Indian household. Our journey began with a single laboratory and a commitment to excellence in healthcare diagnostics.",
-            Category = "Foundation",
-            Icon = "fa-seedling",
-            IsLeft = false,
-            Achievements = new List<string> 
-            { 
-                "First laboratory established in Delhi",
-                "Started with 5 dedicated employees", 
-                "Basic pathology and biochemistry services",
-                "Commitment to quality and accuracy"
-            }
-        },
-        new TimelineMilestone
-        {
-            Year = "2005",
-            Title = "Expansion & Technology",
-            Description = "Major expansion phase with state-of-the-art technology and automated systems for faster, more accurate results. We expanded our network across multiple cities and introduced advanced diagnostic capabilities.",
-            Category = "Technology",
-            Icon = "fa-microscope",
-            IsLeft = true,
-            Achievements = new List<string> 
-            { 
-                "100+ centers across major Indian cities",
-                "Advanced automation and robotics systems", 
-                "Digital reporting and result management",
-                "Introduction of specialized diagnostic tests"
-            },
-            Stats = new List<TimelineStat> 
-            { 
-                new TimelineStat { Value = "100+", Label = "Centers" },
-                new TimelineStat { Value = "200+", Label = "Tests" }
-            }
-        },
-        new TimelineMilestone
-        {
-            Year = "2015",
-            Title = "Digital Revolution",
-            Description = "Complete digital transformation with online booking, mobile apps, and real-time report tracking. We embraced technology to make healthcare more accessible and convenient for our patients.",
-            Category = "Digital",
-            Icon = "fa-mobile-alt",
-            IsLeft = false,
-            Achievements = new List<string> 
-            { 
-                "Mobile app launched with 1M+ downloads",
-                "Online booking and appointment system", 
-                "Real-time report tracking and notifications",
-                "Digital health records and patient portal"
-            },
-            Stats = new List<TimelineStat> 
-            { 
-                new TimelineStat { Value = "1M+", Label = "App Downloads" },
-                new TimelineStat { Value = "24/7", Label = "Digital Support" }
-            }
-        },
-        new TimelineMilestone
-        {
-            Year = "2020",
-            Title = "COVID-19 Response",
-            Description = "Pioneered COVID-19 testing with rapid response, home collection, and drive-through testing facilities. We played a crucial role in the nation's fight against the pandemic.",
-            Category = "Innovation",
-            Icon = "fa-shield-virus",
-            IsLeft = true,
-            Achievements = new List<string> 
-            { 
-                "500+ COVID-19 testing centers nationwide",
-                "Home collection service for safety", 
-                "Drive-through testing facilities",
-                "Rapid PCR and antigen testing capabilities"
-            },
-            Stats = new List<TimelineStat> 
-            { 
-                new TimelineStat { Value = "500K+", Label = "Tests Conducted" },
-                new TimelineStat { Value = "100%", Label = "Safety Protocols" }
-            }
-        },
-        new TimelineMilestone
-        {
-            Year = "2025",
-            Title = "Future of Healthcare",
-            Description = "Leading the future with AI-powered diagnostics, personalized medicine, and preventive healthcare solutions. We're embracing cutting-edge technology to revolutionize healthcare delivery.",
-            Category = "Future",
-            Icon = "fa-robot",
-            IsLeft = false,
-            Achievements = new List<string> 
-            { 
-                "AI-powered diagnostic assistance",
-                "Personalized medicine and genomics", 
-                "Preventive healthcare programs",
-                "Advanced imaging and radiology services"
-            },
-            Stats = new List<TimelineStat> 
-            { 
-                new TimelineStat { Value = "280+", Label = "Centers" },
-                new TimelineStat { Value = "50M+", Label = "Tests Conducted" }
-            }
-        }
-    };
-
     private void HandleExploreServices()
     {
         Console.WriteLine("Explore services clicked!");
-        // Navigate to services page or scroll to services section
-    }
-
-    public class TimelineMilestone
-    {
-        public string Year { get; set; } = string.Empty;
-        public string Title { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string Category { get; set; } = string.Empty;
-        public string Icon { get; set; } = string.Empty;
-        public bool IsLeft { get; set; }
-        public List<string>? Achievements { get; set; }
-        public List<TimelineStat>? Stats { get; set; }
-    }
-
-    public class TimelineStat
-    {
-        public string Value { get; set; } = string.Empty;
-        public string Label { get; set; } = string.Empty;
     }
 } 

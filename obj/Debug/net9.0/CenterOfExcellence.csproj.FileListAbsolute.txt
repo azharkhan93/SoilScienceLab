@@ -76,4 +76,4 @@
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.genruntimeconfig.cache
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/ref/CenterOfExcellence.dll
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz
-/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-701pg6lptv.gz
+/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-f7m6g2s4pb.gz

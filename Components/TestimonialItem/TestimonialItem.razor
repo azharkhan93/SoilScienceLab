@@ -1,4 +1,4 @@
-@namespace CenterOfExcellence.Components.TestimonialItem
+@using CenterOfExcellence.Constants
 
 @code {
     [Parameter] public TestimonialData Testimonial { get; set; } = new();
@@ -15,7 +15,7 @@
         </div>
     </div>
     
-    <!-- Star Rating -->
+   
     <div class="flex gap-1 mb-4">
         @for (int i = 0; i < Testimonial.StarRating; i++)
         {

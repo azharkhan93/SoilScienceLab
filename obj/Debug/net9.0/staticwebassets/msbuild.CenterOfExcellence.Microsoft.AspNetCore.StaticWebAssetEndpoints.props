@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pgkf7mdfm4"},{"Name":"integrity","Value":"sha256-WSQYSNbaUQJgqxBiS31UkIaEokEcPXRoYFMYYQFrQDI="},{"Name":"label","Value":"_content/CenterOfExcellence/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1264"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WSQYSNbaUQJgqxBiS31UkIaEokEcPXRoYFMYYQFrQDI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Mar 2025 15:53:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/css/build.701pg6lptv.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\build.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"701pg6lptv"},{"Name":"integrity","Value":"sha256-V0kFuX4resEH5cfBvnhB2NZ/heRTlnfGMsa7JjctIyo="},{"Name":"label","Value":"_content/CenterOfExcellence/css/build.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36306"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V0kFuX4resEH5cfBvnhB2NZ/heRTlnfGMsa7JjctIyo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 19:49:52 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/css/build.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\build.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-V0kFuX4resEH5cfBvnhB2NZ/heRTlnfGMsa7JjctIyo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36306"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V0kFuX4resEH5cfBvnhB2NZ/heRTlnfGMsa7JjctIyo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 19:49:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-682njRG1P9VE7CbgJYCrWfdnIWKS/wkTVVFjUt/r13w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"40643"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022682njRG1P9VE7CbgJYCrWfdnIWKS/wkTVVFjUt/r13w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Jul 2025 07:35:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/css/build.f7m6g2s4pb.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\build.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f7m6g2s4pb"},{"Name":"integrity","Value":"sha256-682njRG1P9VE7CbgJYCrWfdnIWKS/wkTVVFjUt/r13w="},{"Name":"label","Value":"_content/CenterOfExcellence/css/build.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"40643"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022682njRG1P9VE7CbgJYCrWfdnIWKS/wkTVVFjUt/r13w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Jul 2025 07:35:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CenterOfExcellence/css/tailwind.cfs0wbahkk.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\tailwind.css'))</AssetFile>

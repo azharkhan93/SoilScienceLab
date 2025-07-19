@@ -1,0 +1,30 @@
+@using CenterOfExcellence.Components.HeroSection.Data
+
+<div class="carousel-thumbnails absolute bottom-8 right-8 flex flex-row gap-6 z-20">
+    @foreach (var slide in Slides)
+    {
+        <div class="thumbnail @(slide.Id == ActiveSlideId ? "active" : "")" data-thumb="@slide.Id">
+            <img src="@slide.ThumbnailImage" 
+                 alt="@slide.AltText" 
+                 class=" w-24 md:w-[120px] h-16 object-cover rounded-lg cursor-pointer border-2 border-white/50 hover:border-white transition-all duration-300"
+                 @onclick="async () => await OnSlideChange.InvokeAsync(slide.Id)" />
+        </div>
+    }
+</div>
+
+<style>
+    .thumbnail {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .thumbnail.active img {
+        border-color: white;
+        transform: scale(1.1);
+    }
+</style>
+
+@code {
+    [Parameter] public List<SlideData> Slides { get; set; } = new();
+    [Parameter] public int ActiveSlideId { get; set; }
+    [Parameter] public EventCallback<int> OnSlideChange { get; set; }
+} 

@@ -9,10 +9,12 @@
             <i class="fa-solid fa-xmark text-5xl text-white cursor-pointer hover:text-red-800 transition-all"></i>
         </button>
 
-        <NavLinkItem href="/" text="Home" borderTop="true" borderBottom="true" />
-        <NavLinkItem href="/about" text="About" />
-        <NavLinkItem href="/contact" text="Contact" />
-        <NavLinkItem href="/sample-registration" text="Sample Registration" />
+        <div class="flex flex-col gap-6 w-full" @onclick="HandleNavClick">
+            <NavLinkItem href="/" text="Home" match="NavLinkMatch.All" />
+            <NavLinkItem href="/sample-registration" text="Book A Test" />
+            <NavLinkItem href="/about" text="About" />
+            <NavLinkItem href="/contact" text="Contact" />
+        </div>
 
         <button class="bg-blue-950 hover:bg-red-800 text-white px-10 py-2 rounded w-full">Sign Up</button>
     </div>
@@ -29,4 +31,9 @@ else
 @code {
     [Parameter] public bool IsOpen { get; set; }
     [Parameter] public EventCallback OnToggle { get; set; }
+
+    private async Task HandleNavClick()
+    {
+        await OnToggle.InvokeAsync();
+    }
 }

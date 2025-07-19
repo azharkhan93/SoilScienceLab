@@ -68,8 +68,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb3VuZGVycy9Gb3VuZGVycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/HeroSection/Carousel/Carousel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9IZXJvU2VjdGlvbi9DYXJvdXNlbC9DYXJvdXNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/HeroSection/HeroSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9IZXJvU2VjdGlvbi9IZXJvU2VjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/HeroSection/Slider/Slider.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9IZXJvU2VjdGlvbi9TbGlkZXIvU2xpZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/HeroSection/Thumbnails/Thumbnails.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9IZXJvU2VjdGlvbi9UaHVtYm5haWxzL1RodW1ibmFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/MobileNav/MobileNav.razor]

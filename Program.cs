@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Register services
+builder.Services.AddScoped<CenterOfExcellence.Components.HeroSection.Services.IHeroSlideService, CenterOfExcellence.Components.HeroSection.Services.HeroSlideService>();
 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

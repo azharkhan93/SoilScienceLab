@@ -1,5 +1,5 @@
-<NavLink href="@Href" class="font-subHeading  text-[16px] p-2 transition-colors duration-300 hover:text-blue-500  "
-         style="@BorderStyle" Match="@Match">
+<NavLink href="@Href" class="font-subHeading text-[16px] p-2 transition-colors duration-300 hover:text-blue-500  text-white md:hover:text-blue-500 hover:text-blue-300"
+         style="@BorderStyle" Match="@Match" @onclick="HandleClick">
     @Text
 </NavLink>
 
@@ -9,7 +9,16 @@
     [Parameter] public NavLinkMatch Match { get; set; } = NavLinkMatch.All;
     [Parameter] public bool BorderTop { get; set; } = false;
     [Parameter] public bool BorderBottom { get; set; } = false;
+    [Parameter] public EventCallback OnLinkClick { get; set; }
 
-    private string BorderStyle => $"{(BorderTop ? "border-t-2 border-black" : "")} {(BorderBottom ? "border-b-2 border-black" : "")}";
+    private string BorderStyle => $"{(BorderTop ? "border-t-2 border-white md:border-black" : "")} {(BorderBottom ? "border-b-2 border-white md:border-black" : "")}";
+
+    private async Task HandleClick()
+    {
+        if (OnLinkClick.HasDelegate)
+        {
+            await OnLinkClick.InvokeAsync();
+        }
+    }
 }
 

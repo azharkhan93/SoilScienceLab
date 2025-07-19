@@ -1,161 +1,50 @@
 
 @inject IJSRuntime JS
+@inject IHeroSlideService HeroSlideService
+@using CenterOfExcellence.Components.HeroSection.Slider
+@using CenterOfExcellence.Components.HeroSection.Carousel
+@using CenterOfExcellence.Components.HeroSection.Thumbnails
+@using CenterOfExcellence.Components.HeroSection.Data
+@using CenterOfExcellence.Components.HeroSection.Services
 
-<section class="hero-carousel relative w-full h-[90vh] overflow-hidden">
+<section class="hero-carousel relative w-full h-[100vh] overflow-hidden">
     <!-- Background Slides -->
-    <div class="carousel-slides absolute inset-0">
-        <div class="carousel-slide active" data-slide="0" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-        <div class="carousel-slide" data-slide="1" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80')">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-        <div class="carousel-slide" data-slide="2" style="background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-    </div>
-
+    <Slider Slides="Slides" ActiveSlideId="ActiveSlideId" />
+    
     <!-- Content -->
-    <div class="carousel-content" data-content="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; display: flex; align-items: center; justify-content: start;">
-        <div class="text-white px-8 py-16 max-w-4xl">
-            <h1 class="hero-title font-heading text-[35px] md:text-[50px] leading-heading mb-6 text-white drop-shadow-lg">
-                Experience the Future
-            </h1>
-            <p class="hero-subtitle font-subHeading text-[16px] md:text-[20px] lg:text-[22px] leading-paragraph mb-8 max-w-3xl text-white/90 drop-shadow-md">
-                Innovate, Create, and Inspire with Cutting-edge Technology
-            </p>
-            <div class="flex justify-start">
-                <CustomButton Text="Get Started" Variant="ButtonVariant.Primary" OnClick="@HandleClick" />
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-content" data-content="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; display: flex; align-items: center; justify-content: start;">
-        <div class="text-white px-8 py-16 max-w-4xl">
-            <h1 class="hero-title font-heading text-[35px] md:text-[50px] lg:text-[60px] leading-heading mb-6 text-white drop-shadow-lg">
-                Advanced Diagnostics
-            </h1>
-            <p class="hero-subtitle font-subHeading text-[16px] md:text-[20px] lg:text-[22px] leading-paragraph mb-8 max-w-3xl text-white/90 drop-shadow-md">
-                State-of-the-art laboratory testing with precision and accuracy
-            </p>
-            <div class="flex justify-start">
-                <CustomButton Text="Learn More" Variant="ButtonVariant.Primary" OnClick="@HandleClick" />
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-content" data-content="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; display: flex; align-items: center; justify-content: start;">
-        <div class="text-white px-8 py-16 max-w-4xl">
-            <h1 class="hero-title font-heading text-[35px] md:text-[50px] lg:text-[60px] leading-heading mb-6 text-white drop-shadow-lg">
-                Quality Healthcare
-            </h1>
-            <p class="hero-subtitle font-subHeading text-[16px] md:text-[20px] lg:text-[22px] leading-paragraph mb-8 max-w-3xl text-white/90 drop-shadow-md">
-                Your health, our priority with comprehensive medical solutions
-            </p>
-            <div class="flex justify-start">
-                <CustomButton Text="Book Now" Variant="ButtonVariant.Primary" OnClick="@HandleClick" />
-            </div>
-        </div>
-    </div>
-
+    <Carousel Slides="Slides" ActiveSlideId="ActiveSlideId" OnButtonClick="HandleClick" />
+    
     <!-- Thumbnail Navigation -->
-    <div class="carousel-thumbnails absolute bottom-8 right-8 flex flex-row gap-6 z-20">
-        <div class="thumbnail active" data-thumb="0">
-            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                 alt="Slide 1" class="w-[120px] h-16 object-cover rounded-lg cursor-pointer border-2 border-white/50 hover:border-white transition-all duration-300">
-        </div>
-        <div class="thumbnail" data-thumb="1">
-            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                 alt="Slide 1" class="w-[120px] h-16 object-cover rounded-lg cursor-pointer border-2 border-white/50 hover:border-white transition-all duration-300">
-        </div>
-        <div class="thumbnail" data-thumb="2">
-            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                 alt="Slide 3" class="w-[120px] h-16 object-cover rounded-lg cursor-pointer border-2 border-white/50 hover:border-white transition-all duration-300">
-        </div>
-    </div>
-
-
+    <Thumbnails Slides="Slides" ActiveSlideId="ActiveSlideId" OnSlideChange="SetActiveSlide" />
 </section>
 
 <style>
     .hero-carousel {
         position: relative;
     }
-
-    .carousel-slides {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    .carousel-slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 0;
-        transition: opacity 0.8s ease-in-out;
-        will-change: opacity;
-        overflow: hidden;
-    }
-
-    .carousel-slide.active {
-        opacity: 1;
-    }
-
-    .carousel-content {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s ease-in-out;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 20;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-    }
-
-    .carousel-content.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .carousel-content h1 {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        font-weight: 700;
-    }
-
-    .carousel-content p {
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        line-height: 1.6;
-    }
-
-    .thumbnail {
-        transition: all 0.3s ease-in-out;
-    }
-
-    .thumbnail.active img {
-        border-color: white;
-        transform: scale(1.1);
-    }
-
-
 </style>
 
 @code {
+    private List<SlideData> Slides { get; set; } = new();
+    private int ActiveSlideId { get; set; } = 1;
+
+    protected override void OnInitialized()
+    {
+        Slides = HeroSlideService.GetSlides();
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
             await JS.InvokeVoidAsync("initializeHeroCarousel");
         }
+    }
+
+    private void SetActiveSlide(int slideId)
+    {
+        ActiveSlideId = slideId;
+        StateHasChanged();
     }
 
     private void HandleClick()

@@ -33,10 +33,6 @@
       "PackagePath": "staticwebassets/images/globe2.png"
     },
     {
-      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/animated-sections.js",
-      "PackagePath": "staticwebassets/js/animated-sections.js"
-    },
-    {
       "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/footer.js",
       "PackagePath": "staticwebassets/js/footer.js"
     },
@@ -51,10 +47,6 @@
     {
       "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/parallax-scroll.js",
       "PackagePath": "staticwebassets/js/parallax-scroll.js"
-    },
-    {
-      "Id": "/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/wwwroot/js/testimonial-slider.js",
-      "PackagePath": "staticwebassets/js/testimonial-slider.js"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CenterOfExcellence.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

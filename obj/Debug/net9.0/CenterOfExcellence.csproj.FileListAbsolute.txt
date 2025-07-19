@@ -75,10 +75,8 @@
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/CenterOfExcellence.genruntimeconfig.cache
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/ref/CenterOfExcellence.dll
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/2bd3t8nwb9-tm3yp693rp.gz
-/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/24etb3zp2d-q7dhovnsx7.gz
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/pz0in8bi42-n553rcn7yy.gz
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/l6r6aqxuyr-vmgerjtwcn.gz
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/sqhust8gtz-oe3u5gj2ir.gz
-/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-06tlekmal9.gz
 /Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/js7ok0yhep-7sxzomj6eu.gz
-/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/rnpwq2wa28-vflsfym9wu.gz
+/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/obj/Debug/net9.0/compressed/78t8njdpbg-r4svlljshu.gz

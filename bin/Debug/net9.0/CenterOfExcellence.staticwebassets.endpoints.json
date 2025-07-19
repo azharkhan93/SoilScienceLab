@@ -631,15 +631,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bo3Gf0tCgDex3ui6ZvFFNBwZ0JNLW7mZUoMbBBWtjoQ=\""
+          "Value": "\"FM6BpXoWOlF/EXEbcWwTXWvHXVP/emiyAx7ruBU/1CM=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0=\""
+          "Value": "W/\"IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:37 GMT"
+          "Value": "Sat, 19 Jul 2025 11:19:30 GMT"
         },
         {
           "Name": "Vary",
@@ -649,7 +649,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0="
+          "Value": "sha256-IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts="
         }
       ]
     },
@@ -668,7 +668,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44065"
+          "Value": "44105"
         },
         {
           "Name": "Content-Type",
@@ -676,17 +676,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0=\""
+          "Value": "\"IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:37 GMT"
+          "Value": "Sat, 19 Jul 2025 11:19:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0="
+          "Value": "sha256-IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts="
         }
       ]
     },
@@ -717,11 +717,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bo3Gf0tCgDex3ui6ZvFFNBwZ0JNLW7mZUoMbBBWtjoQ=\""
+          "Value": "\"FM6BpXoWOlF/EXEbcWwTXWvHXVP/emiyAx7ruBU/1CM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:37 GMT"
+          "Value": "Sat, 19 Jul 2025 11:19:30 GMT"
         },
         {
           "Name": "Vary",
@@ -731,12 +731,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bo3Gf0tCgDex3ui6ZvFFNBwZ0JNLW7mZUoMbBBWtjoQ="
+          "Value": "sha256-FM6BpXoWOlF/EXEbcWwTXWvHXVP/emiyAx7ruBU/1CM="
         }
       ]
     },
     {
-      "Route": "css/build.rbxl558se6.css",
+      "Route": "css/build.v0gb5d0bj1.css",
       "AssetFile": "css/build.css.gz",
       "Selectors": [
         {
@@ -768,15 +768,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bo3Gf0tCgDex3ui6ZvFFNBwZ0JNLW7mZUoMbBBWtjoQ=\""
+          "Value": "\"FM6BpXoWOlF/EXEbcWwTXWvHXVP/emiyAx7ruBU/1CM=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0=\""
+          "Value": "W/\"IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:37 GMT"
+          "Value": "Sat, 19 Jul 2025 11:19:30 GMT"
         },
         {
           "Name": "Vary",
@@ -786,11 +786,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rbxl558se6"
+          "Value": "v0gb5d0bj1"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0="
+          "Value": "sha256-IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts="
         },
         {
           "Name": "label",
@@ -799,7 +799,7 @@
       ]
     },
     {
-      "Route": "css/build.rbxl558se6.css",
+      "Route": "css/build.v0gb5d0bj1.css",
       "AssetFile": "css/build.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -813,7 +813,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44065"
+          "Value": "44105"
         },
         {
           "Name": "Content-Type",
@@ -821,21 +821,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0=\""
+          "Value": "\"IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:37 GMT"
+          "Value": "Sat, 19 Jul 2025 11:19:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rbxl558se6"
+          "Value": "v0gb5d0bj1"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CYvN4eoqE3OZrhaVg3udCJsVfWBWvYuAzAJaG67ZqC0="
+          "Value": "sha256-IaGZuZFD5AC0WrVWZtv6zzS8VSX5RA40xKyluzqO+ts="
         },
         {
           "Name": "label",
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "Route": "css/build.rbxl558se6.css.gz",
+      "Route": "css/build.v0gb5d0bj1.css.gz",
       "AssetFile": "css/build.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
@@ -870,11 +870,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bo3Gf0tCgDex3ui6ZvFFNBwZ0JNLW7mZUoMbBBWtjoQ=\""
+          "Value": "\"FM6BpXoWOlF/EXEbcWwTXWvHXVP/emiyAx7ruBU/1CM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:37 GMT"
+          "Value": "Sat, 19 Jul 2025 11:19:30 GMT"
         },
         {
           "Name": "Vary",
@@ -884,11 +884,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rbxl558se6"
+          "Value": "v0gb5d0bj1"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bo3Gf0tCgDex3ui6ZvFFNBwZ0JNLW7mZUoMbBBWtjoQ="
+          "Value": "sha256-FM6BpXoWOlF/EXEbcWwTXWvHXVP/emiyAx7ruBU/1CM="
         },
         {
           "Name": "label",
@@ -2711,304 +2711,6 @@
         {
           "Name": "label",
           "Value": "js/parallax-scroll.js.gz"
-        }
-      ]
-    },
-    {
-      "Route": "js/testimonial-slider.js",
-      "AssetFile": "js/testimonial-slider.js.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000651041667"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UnE3xt7Gy/VcPfq9QA2G9+GO1Yk7ZAz+8pMnRDP3CzA=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:08 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs="
-        }
-      ]
-    },
-    {
-      "Route": "js/testimonial-slider.js",
-      "AssetFile": "js/testimonial-slider.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6846"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:08 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs="
-        }
-      ]
-    },
-    {
-      "Route": "js/testimonial-slider.js.gz",
-      "AssetFile": "js/testimonial-slider.js.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UnE3xt7Gy/VcPfq9QA2G9+GO1Yk7ZAz+8pMnRDP3CzA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:08 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-UnE3xt7Gy/VcPfq9QA2G9+GO1Yk7ZAz+8pMnRDP3CzA="
-        }
-      ]
-    },
-    {
-      "Route": "js/testimonial-slider.o68sasmpo6.js",
-      "AssetFile": "js/testimonial-slider.js.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000651041667"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UnE3xt7Gy/VcPfq9QA2G9+GO1Yk7ZAz+8pMnRDP3CzA=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:08 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o68sasmpo6"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs="
-        },
-        {
-          "Name": "label",
-          "Value": "js/testimonial-slider.js"
-        }
-      ]
-    },
-    {
-      "Route": "js/testimonial-slider.o68sasmpo6.js",
-      "AssetFile": "js/testimonial-slider.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6846"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:08 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o68sasmpo6"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kA2SPChT78u3LAEiJDeO64Mgb8hc1V1oKLsa6fLQCNs="
-        },
-        {
-          "Name": "label",
-          "Value": "js/testimonial-slider.js"
-        }
-      ]
-    },
-    {
-      "Route": "js/testimonial-slider.o68sasmpo6.js.gz",
-      "AssetFile": "js/testimonial-slider.js.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1535"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UnE3xt7Gy/VcPfq9QA2G9+GO1Yk7ZAz+8pMnRDP3CzA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Jul 2025 11:04:08 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o68sasmpo6"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UnE3xt7Gy/VcPfq9QA2G9+GO1Yk7ZAz+8pMnRDP3CzA="
-        },
-        {
-          "Name": "label",
-          "Value": "js/testimonial-slider.js.gz"
         }
       ]
     }

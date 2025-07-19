@@ -56,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb3Jtcy9Db250YWN0Rm9ybS9Db250YWN0Rm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Forms/CustomDropdown/CustomDropdown.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb3Jtcy9DdXN0b21Ecm9wZG93bi9DdXN0b21Ecm9wZG93bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Forms/InputField/InputField.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Gb3Jtcy9JbnB1dEZpZWxkL0lucHV0RmllbGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

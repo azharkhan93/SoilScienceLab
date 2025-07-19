@@ -1,9 +1,9 @@
 @using CenterOfExcellence.Constants
 @using CenterOfExcellence.Services
 @using CenterOfExcellence.Components.Common.Buttons
+@using CenterOfExcellence.Components.Forms.CustomDropdown
 
-
-<div class="max-w-7xl mx-auto p-6  ">
+<div class="max-w-7xl mx-auto p-3 md:p-6  ">
     <div class="mb-8">
         <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-2">Sample Registration</h2>
         <p class="font-paragraph text-[18px] leading-paragraph text-gray-600">Register new samples for testing and analysis</p>
@@ -11,49 +11,51 @@
 
     <form @onsubmit="HandleSubmit" class="space-y-8">
         <!-- Client Information Section -->
-        <div class=" rounded-lg p-6">
+        <div class=" rounded-lg p-3 md:p-6">
             <h3 class="font-subHeading text-[20px] leading-subHeading text-gray-800 mb-4">Client Information</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <InputField 
-                    Placeholder="Client Name" 
+                    Label="Client Name"
+                    Placeholder="Enter client name" 
                     Value="@sample.ClientName" 
                     ValueChanged="@(value => sample.ClientName = value)" 
                     Type="text" 
-                    MaxLength="100" />
+                    MaxLength="100"
+                    IsRequired="true" />
                 
                 <InputField 
-                    Placeholder="Client Email" 
+                    Label="Client Email"
+                    Placeholder="Enter client email" 
                     Value="@sample.ClientEmail" 
                     ValueChanged="@(value => sample.ClientEmail = value)" 
                     Type="email" 
-                    MaxLength="100" />
+                    MaxLength="100"
+                    IsRequired="true" />
                 
                 <InputField 
-                    Placeholder="Client Phone" 
+                    Label="Client Phone"
+                    Placeholder="Enter client phone number" 
                     Value="@sample.ClientPhone" 
                     ValueChanged="@(value => sample.ClientPhone = value)" 
                     Type="tel" 
                     CountryCode="+91" 
-                    MaxLength="15" />
+                    MaxLength="15"
+                    IsRequired="true" />
             </div>
         </div>
 
        
-        <div class="rounded-lg p-6">
+        <div class="rounded-lg p-3 md:p-6">
             <h3 class="font-subHeading text-[20px] leading-subHeading text-gray-800 mb-4">Sample Details</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Sample Type Selection -->
-                <div >
-                    <label class="block font-paragraph text-[16px] text-gray-700 mb-2">Sample Type</label>
-                    <select @bind="selectedSampleTypeCode" @bind:after="OnSampleTypeChanged" 
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-paragraph text-[16px]">
-                        <option value="" class="font-paragraph text-[16px]">Select Sample Type</option>
-                        @foreach (var sampleType in AppConstants.SampleManagement.SampleTypes)
-                        {
-                            <option value="@sampleType.Code" class="font-paragraph text-[16px]">@sampleType.Name - @sampleType.Description</option>
-                        }
-                    </select>
-                </div>
+                <CustomDropdown 
+                    Label="Sample Type"
+                    Placeholder="Select Sample Type"
+                    SelectedValue="@selectedSampleTypeCode"
+                    SelectedValueChanged="@(value => { selectedSampleTypeCode = value; OnSampleTypeChanged(); })"
+                    Options="@sampleTypeOptions"
+                    IsRequired="true" />
 
                 <!-- Date Received -->
                 <div >
@@ -63,20 +65,19 @@
                 </div>
 
                 <!-- Turnaround Time -->
-                <div >
-                    <label class="block font-paragraph text-[16px] text-gray-700 mb-2">Turnaround Time</label>
-                    <select @bind="sample.TurnaroundTime" 
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-paragraph text-[16px]">
-                        <option value="@TurnaroundType.Standard" class="font-paragraph text-[16px]">Standard (5-7 days)</option>
-                        <option value="@TurnaroundType.Rush" class="font-paragraph text-[16px]">Rush (1-2 days)</option>
-                    </select>
-                </div>
+                <CustomDropdown 
+                    Label="Turnaround Time"
+                    Placeholder="Select turnaround time"
+                    SelectedValue="@sample.TurnaroundTime.ToString()"
+                    SelectedValueChanged="@(value => sample.TurnaroundTime = Enum.Parse<TurnaroundType>(value))"
+                    Options="@turnaroundOptions"
+                    IsRequired="true" />
 
                 <!-- Notes -->
                 <div>
                     <label class="block font-paragraph text-[16px] text-gray-700 mb-2">Notes (Optional)</label>
                     <textarea @bind="sample.Notes" 
-                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" 
+                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-paragraph text-[16px]" 
                               rows="2" 
                               placeholder="Additional notes about the sample..."></textarea>
                 </div>
@@ -84,7 +85,7 @@
         </div>
 
         <!-- Test Parameters Section -->
-        <div class="bg-gray-50 rounded-lg p-6">
+        <div class="bg-gray-50 rounded-lg p-3 md:p-6">
             <h3 class="font-subHeading text-[20px] leading-subHeading text-gray-800 mb-4">Test Parameters</h3>
             <p class="font-paragraph text-[16px] leading-paragraph text-gray-600 mb-4">Select the tests you want to perform on this sample</p>
             
@@ -117,7 +118,7 @@
         <!-- Summary Section -->
         @if (selectedTests.Any())
         {
-            <div class="bg-blue-50 rounded-lg p-6">
+            <div class="bg-blue-50 rounded-lg p-3 md:p-6">
                 <h3 class="font-subHeading text-[20px] leading-subHeading text-gray-800 mb-4">Order Summary</h3>
                 <div class="space-y-3">
                     @foreach (var test in selectedTests)
@@ -157,10 +158,31 @@
     private List<TestParameterData> selectedTests = new();
     private decimal totalAmount = 0;
 
+    private List<CustomDropdown.DropdownOption> sampleTypeOptions = new();
+    private List<CustomDropdown.DropdownOption> turnaroundOptions = new();
+
     protected override void OnInitialized()
     {
         // Initialize available tests
         availableTests = AppConstants.SampleManagement.TestParameters.ToList();
+
+        // Initialize sample type options from AppConstants
+        sampleTypeOptions = AppConstants.SampleManagement.SampleTypes
+            .Select(st => new CustomDropdown.DropdownOption 
+            { 
+                Value = st.Code, 
+                Text = $"{st.Name} - {st.Description}" 
+            })
+            .ToList();
+
+        // Initialize turnaround options
+        turnaroundOptions = new List<CustomDropdown.DropdownOption>
+        {
+            new() { Value = TurnaroundType.Standard.ToString(), Text = "Standard (5-7 days)" },
+            new() { Value = TurnaroundType.Rush.ToString(), Text = "Rush (1-2 days)" },
+            new() { Value = "express", Text = "Express (Same day)" },
+            new() { Value = "urgent", Text = "Urgent (4-6 hours)" }
+        };
     }
 
     private void OnSampleTypeChanged()

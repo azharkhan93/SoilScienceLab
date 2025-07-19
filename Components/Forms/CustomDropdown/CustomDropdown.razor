@@ -1,0 +1,95 @@
+@using System.Collections.Generic
+
+<div class="custom-dropdown relative">
+    @if (!string.IsNullOrEmpty(Label))
+    {
+        <label class="block font-paragraph text-[16px] font-medium text-gray-700 mb-2">
+            @Label @if (IsRequired) { <span class="text-red-500">*</span> }
+        </label>
+    }
+
+    <div class="relative">
+        <button type="button" 
+                @onclick="ToggleDropdown" 
+                @onclick:stopPropagation="true"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-left font-paragraph text-[16px] bg-white flex justify-between items-center hover:border-blue-400 transition-colors">
+            <span class="@(string.IsNullOrEmpty(SelectedValue) ? "text-gray-400" : "text-gray-700")">
+                @(string.IsNullOrEmpty(SelectedValue) ? Placeholder : GetSelectedText())
+            </span>
+            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-200 @(IsOpen ? "rotate-180" : "")"></i>
+        </button>
+
+        @if (IsOpen)
+        {
+            <div class="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto min-w-full">
+                @if (Options.Any())
+                {
+                    @foreach (var option in Options)
+                    {
+                        <button type="button" 
+                                @onclick="() => SelectOption(option.Value)" 
+                                @onclick:stopPropagation="true"
+                                class="w-full px-4 py-3 text-left font-paragraph text-[16px] hover:bg-gray-100 focus:bg-gray-100 focus:outline-none @(option.Value == SelectedValue ? "bg-blue-50 text-blue-700" : "text-gray-700") transition-colors">
+                            @option.Text
+                        </button>
+                    }
+                }
+                else
+                {
+                    <div class="px-4 py-3 text-gray-500 font-paragraph text-[16px]">
+                        No options available
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    @if (!string.IsNullOrEmpty(ValidationMessage))
+    {
+        <p class="font-paragraph text-[14px] mt-1 text-red-500">@ValidationMessage</p>
+    }
+</div>
+
+@code {
+    [Parameter] public string Label { get; set; } = string.Empty;
+    [Parameter] public string Placeholder { get; set; } = "Select an option";
+    [Parameter] public string SelectedValue { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> SelectedValueChanged { get; set; }
+    [Parameter] public List<DropdownOption> Options { get; set; } = new();
+    [Parameter] public bool IsRequired { get; set; } = false;
+    [Parameter] public string ValidationMessage { get; set; } = string.Empty;
+
+    private bool IsOpen { get; set; } = false;
+
+    protected override void OnInitialized()
+    {
+        // Initialize component
+        StateHasChanged();
+    }
+
+    private void ToggleDropdown()
+    {
+        IsOpen = !IsOpen;
+        StateHasChanged();
+    }
+
+    private async Task SelectOption(string value)
+    {
+        SelectedValue = value;
+        IsOpen = false;
+        await SelectedValueChanged.InvokeAsync(value);
+        StateHasChanged();
+    }
+
+    private string GetSelectedText()
+    {
+        var selectedOption = Options.FirstOrDefault(o => o.Value == SelectedValue);
+        return selectedOption?.Text ?? SelectedValue;
+    }
+
+    public class DropdownOption
+    {
+        public string Value { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
+    }
+} 

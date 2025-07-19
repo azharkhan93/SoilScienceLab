@@ -40,6 +40,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vR1NBUEFuaW1hdGlvbi9HU0FQQW5pbWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Common/ProcessSteps/ProcessSteps.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vUHJvY2Vzc1N0ZXBzL1Byb2Nlc3NTdGVwcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/Common/StepCard/StepCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21tb24vU3RlcENhcmQvU3RlcENhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/azhar/Desktop/SoftwareDevelopment/CenterOfExcellence/Components/ContactCard/ContactCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db250YWN0Q2FyZC9Db250YWN0Q2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

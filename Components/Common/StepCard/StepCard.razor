@@ -1,0 +1,44 @@
+<div class="step-card flex flex-col items-center text-center">
+    <!-- Step Circle with Icon -->
+    <div class="relative mb-4">
+        <div class="w-24 h-24 rounded-full bg-gradient-to-b from-blue-600 to-blue-800 flex items-center justify-center shadow-lg">
+            <div class="w-20 h-20 rounded-full bg-white flex items-center justify-center">
+                @if (!string.IsNullOrEmpty(Icon))
+                {
+                    <i class="@Icon text-3xl text-blue-600"></i>
+                }
+                else
+                {
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                        <span class="font-heading text-2xl font-bold text-blue-600">@StepNumber</span>
+                    </div>
+                }
+            </div>
+        </div>
+        
+        <!-- Step Number Badge -->
+        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+            <span class="font-heading text-sm font-bold text-white">@StepNumber</span>
+        </div>
+    </div>
+
+    <!-- Step Title -->
+    <h3 class="font-heading text-xl font-bold text-gray-800 mb-2">@Title</h3>
+    
+    <!-- Step Description -->
+    <p class="font-paragraph text-[16px] leading-paragraph text-gray-600 max-w-xs">@Description</p>
+    
+    <!-- Additional Info (Optional) -->
+    @if (!string.IsNullOrEmpty(AdditionalInfo))
+    {
+        <p class="font-paragraph text-[14px] text-gray-500 mt-2 max-w-xs">@AdditionalInfo</p>
+    }
+</div>
+
+@code {
+    [Parameter] public int StepNumber { get; set; }
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Description { get; set; } = string.Empty;
+    [Parameter] public string AdditionalInfo { get; set; } = string.Empty;
+    [Parameter] public string Icon { get; set; } = string.Empty;
+} 

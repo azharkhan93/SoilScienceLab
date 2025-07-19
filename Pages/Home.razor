@@ -28,6 +28,10 @@
         <div class="reveal-element">
             <QualitySection />
         </div>
+
+        <ProcessSteps 
+            Title="HOW TO BOOK LAB TEST"
+            Steps="@labTestSteps" />
         
         @* <PopularTestSection /> *@
         
@@ -36,6 +40,36 @@
         </div>
     </div>
 </ParallaxScroll>
+
+
+
+@code {
+    private List<ProcessSteps.ProcessStep> labTestSteps = new()
+    {
+        new()
+        {
+            Title = "How to book a Lab test",
+            Description = "Book a test on the Website, or by Call/WhatsApp on 7982100200",
+            Icon = "fa-solid fa-calendar-plus",
+            AdditionalInfo = "Multiple booking options available"
+        },
+        new()
+        {
+            Title = "Home Sample Collection",
+            Description = "A certified Max Phlebo visits your home as per given slot",
+            Icon = "fa-solid fa-house-medical",
+            AdditionalInfo = "Professional sample collection at your doorstep"
+        },
+        new()
+        {
+            Title = "Download Reports",
+            Description = "Download report via Website, WhatsApp & SMS",
+            Icon = "fa-solid fa-file-lines",
+            AdditionalInfo = "Get your results quickly and securely"
+        }
+    };
+}
+
 
 
 

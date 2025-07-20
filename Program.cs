@@ -8,14 +8,18 @@ builder.Services.AddRazorComponents()
 
 var app = builder.Build();
 
-
+// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
     app.UseHsts();
+    app.UseHttpsRedirection();
 }
-
-app.UseHttpsRedirection();
+else
+{
+    // In development, only use HTTPS redirection if HTTPS is available
+    app.UseHttpsRedirection();
+}
 
 app.UseStaticFiles();  
 app.UseAntiforgery();

@@ -4,7 +4,7 @@
     <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class=" mb-12 text-center">
-            <h1 class="font-heading text-[35px] leading-heading text-black mb-6">Why Dr Lal PathLabs</h1>
+            <h1 class="font-heading text-[35px] leading-heading text-black mb-6">Why Choose Us</h1>
             <p class="font-paragraph text-[18px] leading-paragraph text-gray-700">
                 At Our lab, we enable healthy lives through unmatched diagnostic expertise and 
                 new-age technology.
@@ -15,8 +15,18 @@
         <div class="flex flex-col md:flex-row gap-12 items-start ">
 
             
+            <!-- Statistics Section -->
+            
             <!-- Statistics Flex -->
-            <div class="flex flex-row justify-center flex-wrap gap-4 border-2 border-red-500 w-full">
+            <div class="flex flex-row justify-center flex-wrap gap-4  w-full">
+                <div class="flex flex-col items-center text-center mb-8">
+                <h2 class="font-heading text-[35px] leading-heading text-gray-800 mb-4">Why Choose Our lab?</h2>
+                <p class="font-paragraph text-[18px] leading-paragraph text-gray-600 max-w-3xl">
+                    Experience excellence in diagnostic services with our state-of-the-art facilities, 
+                    certified professionals, and commitment to accurate results.
+                </p>
+            </div>
+
                 @foreach (var (iconClass, value, description) in statisticsList)
                 {
                     <StatisticsCard 
@@ -26,12 +36,12 @@
                 }
             </div>
 
-            <!-- Image Section -->
+           
             <div class="flex justify-center">
-                <div class="relative">
+                <div class="relative lex justify-center">
                     <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                          alt="Laboratory scientist working with microscope" 
-                         class="w-[700px] h-[370px] rounded-lg shadow-lg object-cover" />
+                         class="w-[700px] h-[370px] lg:h-[500px] rounded-lg shadow-lg object-cover" />
                 </div>
             </div>
         </div>
